@@ -9,6 +9,11 @@
 #logoArea .btn, #logoArea .btn-group {margin-top: 0;}
 #logo {padding-right:28px;}
 #welcomeLine{padding: 8px 0 4px}
+#cost{
+	font-weight: bold;
+	font-style: italic;
+	color: blue;
+}
 /* Sidebar--------- */
 #myCart  img{float:left; margin-right:8px; }
 #myCart .badge {padding: 9px;}
