@@ -10,8 +10,4 @@ function closeNav() {
     document.body.style.backgroundColor = "white";
 }
 
-$(document).ready(function(){
-    $("#myBtn").click(function(){
-        $("#myModal").modal();
-    });
-});
+
