@@ -108,10 +108,8 @@ CREATE TABLE `product` (
   `content` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `discount` int(11) NOT NULL,
   `image_link` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `image_list` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `created` int(11) NOT NULL DEFAULT '0',
   `view` int(11) NOT NULL DEFAULT '0',
-  `detail` varchar(500) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
   FULLTEXT KEY `name` (`name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -196,4 +194,69 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
+alter table product ADD CONSTRAINT fk_catalog foreign key (catalog_id) references catalog(id);
+
+insert into catalog(id,name,parent_id,sort_order) values (1,'ASUS',0,0);
+insert into catalog(id,name,parent_id,sort_order) values (2,'DELL',0,0);
+insert into catalog(id,name,parent_id,sort_order) values (3,'ACER',0,0);
+insert into catalog(id,name,parent_id,sort_order) values (4,'HP',0,0);
+insert into catalog(id,name,parent_id,sort_order) values (5,'LENOVO',0,0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (1,
+1,
+'Máy xách tay/ Laptop Asus X441NA-GA017T (N3350) (Vàng đồng)',
+6490.000,
+'- CPU: Intel® Celeron® Processor N3350 (1.10GHz, 2M Cache, up to 2.4 GHz)
+- Ram: 4GB DDR3L Bus 1600 Mhz
+- Ổ cứng: HDD500GB 5400rpm Hard Drive Sata
+- Card màn hình: Integrated Intel® HD Graphics
+- Màn hình: 14.0 inch LED backlit HD (1366x768) 60Hz Glare Panel with 45% NTSC
+- Khối lượng: 1.78kg',
+0,
+'.\themes\images\products\Asus_X441NA.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (2,
+1,
+'Máy xách tay/ Laptop Asus X540UP-GO106D (I3-7100U) (Đen)',
+10590000.0000,
+'- CPU Intel Core i3-7100U (2.4GHz, 3MB Cache)
+- RAM 4GB DDR4 - 2133MHz
+- HDD 1TB 5400rpm
+- VGA AMD Radeon R5 M420 2GB DDR3 + Intel HD Graphics 620
+- Màn hính: 15.6" HD (1366 x 768)
+- Trọng lượng: ~ 2kg
+- Hệ điề hành: Free DOS',
+0,
+'.\themes\images\products\asus-vivobook-x540up-go106d-11.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (3,
+1,
+'Máy xách tay/ Laptop Asus FX503VD-E4119T (I7-7700HQ) (Đen)',
+24190000.0000,
+'- CPU Intel Core i7 7700HQ (2.8GHz Up to 3.8GHz, 6MB Cache)
+- RAM 8GB DDR4 - 2400MHz
+- SSHD 1TB 5400rpm + 8GB NAND
+- VGA NVIDIA GeForce GTX 1050 4GB GDDR5 + Intel HD Graphics 630
+- Màn hình: 15.6" FHD (1920 x 1080)
+- Trọng lượng: ~ 2.3kg
+- Hệ điều hành: Windows 10 Home - 64 bit',
+0,
+'.\themes\images\products\Asus-fx503vd-7.jpg',
+0,
+0);
+
+
+
 -- Dump completed on 2018-06-19 23:22:31
+
+
