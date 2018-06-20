@@ -439,8 +439,231 @@ values (12,
 0,
 0);
 
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (13,
+2,
+'Máy xách tay/ Laptop Dell Inspiron 14 3467-M20NR2 (Đen)',
+10490000.0000,
+'○ CPU: Intel Core i3-7100U (2.4GHz. 3MB Cache)
+○ RAM: 4GB DDR4 2133MHz
+○ HDD: 1TB SATA 5400rpm
+○ VGA: Intel HD Graphics 620
+○ OS: Free DOS
+○ DISPLAY: 14" HD (1366x768)
+○ NETWORK: WLAN b/g/n, 10/100/1000Mbps, Bluetooth v4.0
+○ OTHER: 1.81 kg
+○ WARRANTY: 12 tháng',
+0,
+'.\themes\images\products\laptop-dell-inspiron-14-3467-m20nr2.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (14,
+2,
+'LAPTOP DELL INSPIRON 14 5468 (K5CDP1)',
+12790000.0000,
+'- CPU Intel Core i5-7200U (2.5GHz - up to 3.1Ghz. 3MB Cache)
+- RAM 4GB DDR4 2133MHz
+- HDD 500GB SATA 5400rpm
+- VGA AMD Radeon R7 M440 2GB + Intel HD Graphics 620
+- Màn hình: 14" HD (1366x768)
+- Trọng lượng: 2.06kg
+- Hệ điều hành: Win 10 Home',
+0,
+'.\themes\images\products\dell-inspiron14-5468-k5cdp1.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (15,
+2,
+'Máy xách tay/ Laptop Dell Vostro 3468 (F3468-70090697) (Đen)',
+9990000.0000,
+'- CPU Intel Core i3-7100U (2.4GHz. 3MB Cache)
+- RAM 4GB DDR4 2133MHz
+- HDD 1TB SATA 5400rpm
+- VGA Intel HD Graphics 620
+- Màn hình: 14" HD (1366x768)
+- Trọng lượng: 1.96kg
+- Hệ điều hành: Win 10 Home',
+0,
+'.\themes\images\products\dell-vostr-3468-f3468-70090697.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (16,
+2,
+'LAPTOP DELL INSPIRON 14 5468 (70119161)',
+18790000.0000,
+'Vi xử lý core I7
+RAM 8GB/HDD 1TB
+Đồ họa AMD Radeon 2GB
+Màn hình 14'' HD',
+0,
+'.\themes\images\products\dell-inspiron145468-f5468-70119161.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (17,
+3,
+'Máy xách tay/ Laptop Acer F5-573-36LH (NX.GFKSV.003) (Bạc)',
+9490000.0000,
+'- CPU:Core i3-7100U
+- Ram: 4GB
+- Ổ cứng: 500GB
+- Màn hình: 15.6 inches
+- Trọng lượng: 2.4 kg
+- Hệ điều hành có sẵn:Dos',
+0,
+'.\themes\images\products\acer-f5-573-36LH.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (18,
+3,
+'Máy xách tay/ Laptop Acer AS VX5-591G-70XM (NH.GM2SV.001) (Đen)',
+22790000.0000,
+'- CPU:Core i7-7700HQ 2.8GHZ
+- Ram: 8 GB
+- Ổ cứng: HDD 1TB + SSD 128G
+- Màn hình: 15.6 inches
+- Trọng lượng: 2.6 kg
+- Hệ điều hành có sẵn:Dos',
+0,
+'.\themes\images\products\acer-as-vx5-591g-70xm.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (19,
+3,
+'Máy xách tay/ Laptop Acer Swift 5 SF514-51-51PT (NX.GNHSV.001) I5-7200U (Trắng)',
+19990000.0000,
+'- CPU Intel® Core™ i5-7200U Processor (3M Cache, up to 3.10 GHz)
+- Ram 8GB DDR3
+- Ổ cứng 256GB SSD
+- Display 14.0" FHD IPS
+- BT4/ Pin 3Cell/ Vỏ ALU/ Màu TRẮNG/ OS Windows 10SL',
+0,
+'.\themes\images\products\acer-swift-5-sf514-51-51pt.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (20,
+3,
+'Máy xách tay/ Laptop Acer Swift 5 SF514-51-56F3 (NX.GLDSV.004) I5-7200U (Đen)',
+19990000.0000,
+'- CPU:Core™ i5-7200U Processor (3M Cache, up to 3.10 GHz)
+- Ram: 8 GB
+- Ổ cứng: SSD 256G
+- Màn hình: 14 inches
+- Trọng lượng: 1.35kg
+- Hệ điều hành có sẵn:Dos',
+0,
+'.\themes\images\products\acer-swift-5-sf514-5-56f3.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (21,
+3,
+'Máy xách tay/ Laptop Acer SA5-271P-53CQ (NT.LB9SV.003) I5-6200U (Bạc)',
+20199000.0000,
+'- CPU: Core i5-6200U (3M Cache, 2.3Ghz up to 2.8Ghz)
+- Ram: 4 GB 1600 MHz
+- Ổ cứng: SSD 256G
+- Màn hình: 12 inches
+- Trọng lượng: 1.25kg
+- Hệ điều hành có sẵn: Window 10 Pro',
+0,
+'.\themes\images\products\acer-switch-alpha-12-sa5-271p-53cq2.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (22,
+3,
+'Máy xách tay/ Laptop Acer G3-572-70J1 (NH.Q2CSV.003) (Đen)',
+29990000.0000,
+'- CPU: Intel Core i7 7th Gen 2.8 GHz
+- Ram: 8GB DDR4
+- Ổ cứng: HDD 1TB + SSD 128GB
+- Màn hình: 15.6inches
+- Trọng lượng: 2.5kg
+- Hệ điều hành có sẵn: Free DOS',
+0,
+'.\themes\images\products\acer-g3-572-70j1.jpg',
+0,
+0);
 
 
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (23,
+3,
+'Máy xách tay/ Laptop Acer AS VX5-591G-52YZ (NH.GM2SV.002) (Đen)',
+18190000.0000,
+'- CPU: Intel Core i5 7300HQ 2.5GHz - 6M (up to 3.5GHz)
+- Ram: 8GB DDR4
+- Ổ cứng: SSD 128GB M.2 2280 + HDD 1TB 5400rpm Sata3
+- Màn hình: 15.6" inches
+- Trọng lượng: 2.5Kg
+- Hệ điều hành có sẵn: Free DOS',
+0,
+'.\themes\images\products\acser-as-vx5-591g-52yz.jpg',
+0,
+0);
+
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (24,
+3,
+'Máy xách tay/ Laptop Acer E5-575G-39QW (NX.GDWSV.005) (Đen)',
+10690000.0000,
+'- CPU: Intel Core i3 7100U 2.4GHz - 3M
+- Ram: 4GB DDR4
+- Ổ cứng: HDD 500 GB
+- Màn hình: 15.6 inches
+- Trọng lượng: 2.3kg
+- Hệ điều hành có sẵn: Free DOS',
+0,
+'.\themes\images\products\laptop-acer-e5-575g-39qw-15.6-i3-7100u-4gb-ddr4-hdd-500gb-den-1.jpg',
+0,
+0);
+
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (25,
+3,
+'Máy xách tay/ Laptop Acer E5-575G-50TH (NX.GL9SV.003) (Xám)',
+12290000.0000,
+'- CPU: Intel Core i5 7200U 2.5GHz - 3M (up to 3.1GHz)
+- Ram: 4GB DDR4
+- Ổ cứng: HDD 1TB
+- Màn hình: 15.6 inches
+- Trọng lượng: 2.23 kg
+- Hệ điều hành có sẵn: Free DOS',
+0,
+'.\themes\images\products\laptop-acer_e5-575g-50th-15.6-i3-7200u-4gb-ddr4-hdd-1tb-den-1.jpg',
+0,
+0);
 
 -- Dump completed on 2018-06-19 23:22:31
 
