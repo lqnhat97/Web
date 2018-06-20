@@ -107,7 +107,7 @@ CREATE TABLE `product` (
   `price` decimal(15,4) NOT NULL DEFAULT '0.0000',
   `content` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `discount` int(11) NOT NULL,
-  `image_link` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `image_link` varchar(500) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `created` int(11) NOT NULL DEFAULT '0',
   `view` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
@@ -254,6 +254,191 @@ values (3,
 '.\themes\images\products\Asus-fx503vd-7.jpg',
 0,
 0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (4,
+1,
+'Máy xách tay/ Laptop Asus X541UA-GO1384 (I5-7200U) (Đen)',
+10390000.0000,
+'- CPU Intel Core i5-7200U (2.5GHz Up to 3.1GHz, 3MB Cache)
+- RAM 4GB DDR4 - 2133MHz
+- HDD 1TB 5400rpm
+- VGA Intel HD Graphics 620
+- Màn hình: 15.6" HD (1366 x 768)
+- Trọng lượng: ~ 2kg
+- Hệ điều hành: Free DOS',
+0,
+'.\themes\images\products\asus-x541ua-go1384.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (5,
+1,
+'Máy xách tay/ Laptop Asus S510UQ-BQ475T (I5-8250U) (Vàng đồng)',
+16590000.0000,
+'- CPU: Intel Core i5-8250U (1.6GHz Up to 3.4GHz, 6MB Cache)
+- RAM: 1x4GB, DDR4, 2400MHz, 2 Slots
+- Ổ cứng: HDD 1TB 5400rpm, Khe mở rộng: M.2 2280 Sata
+- VGA: NVIDIA GeForce GT940MX 2GB GDDR5 + Intel UHD Graphics 620
+- Màn hình: : 15.6 INCH, 1920x1080, Webcam HD, Led_KB
+- Kết nối: 2x USB 2.0, USB 3.0, USB-C, HDMI, BT 4.2
+- Khối lượng: 1.6 kg
+- Hệ điều hành: Windows 10 Home SL 64bits',
+0,
+'.\themes\images\products\laptop_asus-s510uq-bq475t-15.6_i5-8250u_4gb_hdd-1tb-trang-4.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (6,
+1,
+'Máy xách tay/ Laptop Asus X541UV-GO607 (I5-7200U) (Đen)',
+10590000.0000,
+'- CPU Intel Core i5-7200U (2.5GHz Up to 3.1GHz, 3MB Cache)
+- RAM 4GB DDR4 - 2133MHz
+- HDD 1TB 5400rpm
+- VGA NVIDIA GeForce 920MX 2GB GDDR3 + Intel HD Graphics 620
+- Màn hình: 15.6" HD (1366 x 768) TouchScreen
+- Trọng lượng: ~ 2kg
+- Hệ điều hành: Free DOS',
+0,
+'.\themes\images\products\laptop-asus-x541uv-go607-15.6-i5-7200u-4gb-ddr4-hdd-1tb-den-2.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (7,
+2,
+'Máy xách tay/ Laptop Dell Inspiron 14 7460-N4I5259W (Đồng)',
+16490000.0000,
+'- CPU Intel Core i5-7200U (2.5GHz - up to 3.1Ghz. 3MB Cache)
+- RAM 4GB DDR4 2400MHz
+- HDD 500GB SATA 5400rpm + SSD 128GB M.2 SATA
+- VGA NVIDIA GeForce 940MX 2GB GDDR5 + Intel HD Graphics 620
+- Màn hình: 14" LED Full HD (1920x1080)
+- Trọng lượng: 1,6kg
+- Hệ điều hành: Win 10',
+0,
+'.\themes\images\products\dell-inspiron14-7460-14i5259w.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (8,
+2,
+'Máy xách tay/ Laptop Dell Vostro 3468 (F3468-70088614) (Đen)',
+12390000.0000,
+'- CPU Intel Core i5-7200U (2.5GHz - up to 3.1Ghz. 3MB Cache)
+- RAM 4GB DDR4 2400MHz
+- HDD 1TB SATA 5400rpm
+- VGA Intel HD Graphics 620
+- Màn hình: 14" HD (1366x768)
+- Trọng lượng: 1.94kg
+- Hệ điều hành: Free DOS',
+0,
+'.\themes\images\products\10031690-mtxt-dell-vostro-14-3468-i5-4-1-70088614_1.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (9,
+2,
+'Máy xách tay/ Laptop Dell Vostro 3568-VTI35037 (Đen)',
+11090000.0000,
+'- CPU Intel Core i3-7100U (2.4GHz. 3MB Cache)
+- RAM 4GB DDR4 2400MHz
+- HDD 1 TB SATA 5400rpm
+- VGA Intel HD Graphics 520
+- Màn hình: 15.6" HD (1366x768)
+- Trọng lượng: 2.1kg
+- Hệ điều hành: Free DOS',
+0,
+'.\themes\images\products\10030511-mtxt-dell-vostro-15-3568-vti35037-_en.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (10,
+2,
+'Máy xách tay/ Laptop Dell Vostro 5568-077M52 (I5-7200U) (Vàng)',
+17490000.0000,
+'- CPU Intel Core i5-7200U (2.5GHz - up to 3.1Ghz. 3MB Cache)
+- RAM 4GB DDR4 2400MHz
+- HDD 1TB SATA 5400rpm
+- VGA NVIDIA GeForce 940MX 2GB GDDR5 + Intel HD Graphics 620
+- Màn hình: 15.6" HD (1366x768)
+- Trọng lượng: 1,98kg
+- Hệ điều hành: Win 10 Home 64',
+0,
+'.\themes\images\products\dell-vostro-5568-077m52.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (11,
+2,
+'Máy xách tay/ Laptop Dell Inspiron 14 3467-C4I51107 (Đen)',
+12490000.0000,
+'- CPU: Intel Core i5-7200U (2.50 Ghz up to 3.10 Ghz, 3M Cache)
+- RAM: 4GB DDR4 2133 MHz (2 slots)
+- VGA: Intel HD Graphics 620
+- Ổ cứng: HDD 1TB 5400rpm
+- Khe mở rộng M2: Không hỗ trợ
+- Màn hình: 14" (1366 x 768)
+- Cổng giao tiếp: HDMI, 2x USB 3.0, USB 2.0
+- Wifi AC, LAN 100Mbit, Bluetooth 4.1, DVD-RW, Webcam HD, Card reader
+- Khối lượng: 1.81 Kg, pin 4 cell
+- Hệ điều hành: Ko hệ điều hành (Không hỗ trợ Windows 7/8)',
+0,
+'.\themes\images\products\laptop-dell_inspiron-3467-c4i51107-14-i5-7200u-4gb-ddr4-hdd-1tb-xam-2.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (12,
+2,
+'Máy xách tay/ Laptop Dell Vostro 5468-VTI5019W (Vàng đồng)',
+16290000.0000,
+'- CPU Intel Core i5-7200U (2.5GHz - up to 3.1Ghz. 3MB Cache)
+- RAM 4GB DDR4 2133MHz
+- HDD 500GB SATA 5400rpm
+- VGA Intel HD Graphics 620
+- Màn hình: 14" HD (1366x768)
+- Trọng lượng: 1.7kg
+- Hệ điều hành: Win 10 Home',
+0,
+'.\themes\images\products\laptop-dell-vostro-5468-vti5019w-14-i5-7200u-4gb-ddr4-hdd-500gb-vang-2.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (12,
+2,
+'Máy xách tay/ Laptop Dell Vostro 5468-VTI5019W (Vàng đồng)',
+16290000.0000,
+'- CPU Intel Core i5-7200U (2.5GHz - up to 3.1Ghz. 3MB Cache)
+- RAM 4GB DDR4 2133MHz
+- HDD 500GB SATA 5400rpm
+- VGA Intel HD Graphics 620
+- Màn hình: 14" HD (1366x768)
+- Trọng lượng: 1.7kg
+- Hệ điều hành: Win 10 Home',
+0,
+'.\themes\images\products\laptop-dell-vostro-5468-vti5019w-14-i5-7200u-4gb-ddr4-hdd-500gb-vang-2.jpg',
+0,
+0);
+
 
 
 
