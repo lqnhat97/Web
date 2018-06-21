@@ -665,6 +665,307 @@ values (25,
 0,
 0);
 
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (26,
+3,
+'Máy xách tay/ Laptop Acer E5-475-31KC (NX.GCUSV.001) (Xám)',
+8690000.0000,
+'- CPU: Intel Core i3 6006U 2.0GHz - 3M
+- Ram: 4GB DDR4
+- Ổ cứng: HDD 500GB 5400rpm Sata3
+- Màn hình: 14 inches
+- Trọng lượng: 2.1kg
+- Hệ điều hành có sẵn: Free DOS',
+0,
+'.\themes\images\products\acer-e5-475-31kc.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (27,
+4,
+'Máy xách tay/ Laptop HP Probook 450 G4-Z6T23PA (Bạc)',
+17090000.0000,
+'- CPU: Core i5, 7200U, 2.5 GHz, 3M, Up to: 3.1 GHz
+-  RAM: 8 GB, DDR4, 2133(2400) MHz, 2 Slots, 
+- Ổ cứng: 500GB 7200rpm, 
+- Khe mở rộng: M.2 2280 Sata
+- Card màn hình: NVIDIA 930MX // Intel HD Graphics 620, 2GB
+- Màn hình: 15.6 inch, 1920x1080, Webcam HD
+- Hệ điều hành: Ubuntu
+- Trọng lượng:  2.04Kg
+- Kết nối: 2x USB 2.0, USB 3.0, USB-C, D-Sub, HDMI, BT 4.2, 4Cell, Finger print.',
+0,
+'.\themes\images\products\hp-probook-450-g4-z6t23pa.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (28,
+4,
+'Máy xách tay/ Laptop HP Pavilion 15-au112TU (Y4G17PA) (Vàng)',
+10990000.0000,
+'- CPU: Core i5 7200U
+- RAM/ HDD: 4Gb/ 500Gb
+- Màn hình: 15.6Inch
+- VGA: VGA onboard, Intel HD Graphics 620
+- HĐH: Win10SL
+- Màu sắc/ Chất liệu: Gold',
+0,
+'.\themes\images\products\laptop-hp-pavilion-15-au112tu-y4g17pa-mau-vang-1.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (29,
+4,
+'Máy xách tay/ Laptop HP Probook 430 G4-1RR41PA (Bạc)',
+17790000.0000,
+'- CPU: Intel Core i7-7500U
+- Ram: 4GB
+- Ổ cứng: SSD 256GB
+- Màn hình: 13.3" HD
+- Trọng lượng: 1.5 Kg
+- Hệ điều hành có sẵn: Free Dos',
+0,
+'.\themes\images\products\hp_probook_430_g4_1.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (30,
+4,
+'Máy xách tay/ Laptop HP Spectre x360-ac028TU (1HP09PA) (Đen)',
+30990000.0000,
+'- CPU: Intel Core i7-7500U
+- Ram: 8GB
+- Ổ cứng: SSD 256GB
+- Màn hình: 13.3" FHD
+- Trọng lượng: 1.32 Kg
+- Hệ điều hành có sẵn: Window 10 Home',
+0,
+'.\themes\images\products\laptop-hp-spectre-x360-ac028tu-1hp09pa-3.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (31,
+4,
+'Máy xách tay/ Laptop HP 15-bs553TU (2GE36PA) (Đen)',
+6990000.0000,
+'- CPU: Intel Pentinum N3710
+- Ram: 4GB
+- Ổ cứng: HDD 500GB
+- Màn hình: 15.6" HD
+- Trọng lượng: 1.9 Kg
+- Hệ điều hành có sẵn: Free Dos',
+0,
+'.\themes\images\products\hp-15-bs553tu-03.jpg',
+0,
+0);
+
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (32,
+4,
+'Máy xách tay/ Laptop HP Pavilion 15-au119TX (Y4G52PA) (Bạc)',
+11590000.0000,
+'- CPU : Intel Core i5 7200U 2.5GHz - 3M (up to 3.1GHz)
+- RAM : 1x 4GB DDR4/2400 (2 slots),
+- HDD 500GB 5400rpm Sata3 with HP 3D DriveGuard
+- Graphics : NVIDIA 940MX 2GB // Intel HD Graphics 620
+- Display : 15.6'' HD SVA
+- Optical and Multimedia : DVD-RW, Webcam HD Lan 100, Wifi N, Bluetooth 4.0
+- Weight and battery : 2Kg - 2Cell
+- Ports : 2x USB 3.0, USB 2.0, HDMI, Reader
+- OS : Windows 10 Home SL 64bits
+- Bảo hành 12 tháng',
+0,
+'.\themes\images\products\hp-pavilion-15-au119tx.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (33,
+4,
+'Máy xách tay/ Laptop HP Pavilion X360 14-ba062TU (2GV24PA) (Bạc)',
+12490000.0000,
+'- CPU: Intel Core i3-7100U
+- Ram: 4GB
+- Ổ cứng: HDD 500GB
+- Màn hình: 14.0" HD
+- Trọng lượng: 1.7 kg
+- Hệ điều hành có sẵn: Win 10',
+0,
+'.\themes\images\products\hp-pavilion-x360-14-ba062TU.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (34,
+4,
+'Máy xách tay/ Laptop HP Pavilion 15-cc048TX (2GV11PA) (Vàng)',
+15100000.0000,
+'- CPU:Intel Core i7 7500U
+- Ram:8GB
+- Ổ cứng: HDD 1TB
+- Màn hình: 15.6" HD
+- Trọng lượng: 2.16 kg
+- Hệ điều hành có sẵn: Free Dos',
+0,
+'.\themes\images\products\hp-pavilion-15-cc048tx.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (35,
+4,
+'Máy xách tay/ Laptop HP Pavilion 14-bf015TU (2GE47PA) (Hồng)',
+12090000.0000,
+'- CPU: Intel Core i3-7100U
+- Ram: 4GB
+- Ổ cứng: HDD 1TB
+- Màn hình: 14.0" FHD
+- Trọng lượng: 1.63 kg
+- Hệ điều hành có sẵn: Free Dos',
+0,
+'.\themes\images\products\hp-pavilion-14-bf015tu.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (36,
+4,
+'Máy xách tay/ Laptop HP Pavilion 14-bf016TU (2GE48PA) (Bạc)',
+11790000.0000,
+'○ CPU: Intel® Core™ i3-7100U 2.4Ghz
+○ RAM: 4GB DDR4 2133Mhz
+○ HDD: 1TB 5400rpm
+○ VGA: Intel HD Graphics 620
+○ OS: Free DOS 
+○ DISPLAY: 14"" diagonal FHD IPS BrightView micro-edge WLED-backlit 
+○ NETWORK: Intel 802.11b/g/n,Bluetooth v4.0 
+○ OTHER: 1.62kg, USB 3.1, 1x HDMI
+○ WARRANTY: 12 Tháng',
+0,
+'.\themes\images\products\hp-pavilion-14-bf016tu.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (37,
+5,
+'Máy xách tay/ Laptop Lenovo G5070-6676 (Đen)',
+7890000.0000,
+'- CPU: i3-4005U
+- Ram: 2GB
+- Ổ cứng: HDD 500GB 
+- Màn hình: 15.6" HD
+- Trọng lượng: 2.3kg
+- Hệ điều hành có sẵn: Free Dos',
+0,
+'.\themes\images\products\lenovo-g5070-5942-3771-black_1.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (38,
+5,
+'Máy xách tay/ Laptop Lenovo Yoga 520-14IKB-80X80109VN (I5-7200U) (Xám)',
+14700000.0000,
+'- CPU: Core i5, 7200U, 2.5GHz, 3M, Up to: 3.1GHz
+- RAM: 1x4GB, DDR4, 2400MHz, 1 Slot
+- HDD: 1TB 5400rpm, Khe mở rộng: M.2 2280 (PCIe 3 x4)
+- Card màn hình: Intel HD Graphics 620, SHARE
+- Màn hình: 14 INCH, 1920x1080, Touch Screen, Webcam HD, Led_KB
+- Kết nối: USB 3.0, USB 2.0, USB-C, HDMI, BT 4.1, 2 Cell, Finger print
+- Khối lượng: 1.74 kg
+- Hệ điều hành có sẵn: Windows 10 Home SL 64bit',
+0,
+'.\themes\images\products\laptop-lenovo-yoga-520-14ikb.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (39,
+5,
+'Máy xách tay/ Laptop Lenovo Ideapad 320-15IKB 81BG00DYVN (i5-8250U) (Xám)',
+12990000.0000,
+'- CPU Intel® Core™ i5-8250U Processor (6M Cache, up to 3.40 GHz)
+- RAM 4GB DDR4
+- HDD 1TB 5400rpm
+- Display 15.6" FHD
+- HĐH Windows 10',
+0,
+'.\themes\images\products\lenovo_ideapad320.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (40,
+5,
+'Máy xách tay/ Laptop Lenovo Yoga 520-14IKB-80X80106VN (I3-7130U) (Xám)',
+11590000.0000,
+'- CPU: Intel Core i3 Kabylake, 7130U, 2.70 GHz
+- RAM: 4 GB, DDR4 (1 khe), 2133 MHz
+- Ổ cứng: HDD: 500 GB
+- Màn hình: 14 inch, HD (1366 x 768)',
+0,
+'.\themes\images\products\lenovo-yoga-520-14ikb-i3-7130u-80x80106vn-xam-3-2-org.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (41,
+5,
+'Máy xách tay/ Laptop Lenovo Yoga 520-14IKBR-81C8006AVN (I5-8250U) (Vàng)',
+11590000.0000,
+'- Dung lượng RAM khá lớn với 4GB.
+- Màn hình có độ phân giải Full UHD vô cùng sắc nét.
+- Cấu hình cực kì mạnh mẽ.
+- Kiểu dáng nhỏ gọn, dễ dàng mang theo.
+- Màu sắc tinh tế, rất được ưa thích.',
+0,
+'.\themes\images\products\lenovo-yoga520-14IKBR-81C800.jpg',
+0,
+0);
+
+insert into product(id,catalog_id,name,price,content,discount,image_link,
+created,view) 
+values (42,
+5,
+'Máy xách tay/ Laptop Lenovo Ideapad 320-15IKB 81BG00E1VN (i7-8550U) (Xám)',
+16990000.0000,
+'- CPU: Core i7, 8550U, 1.8GHz, 8M, Up to: 4.0GHz
+- Ram: 4GB Onboard, DDR4, 2133MHz, 1 Slot
+- Ổ cứng: HDD 1TB 5400rpm
+- Card màn hình: NVIDIA GeForce MX150 // Intel UHD Graphics 620, 2GB
+- Màn hình: 15.6 INCH, 1920x1080, Webcam HD
+- Kết nối: USB 3.0, USB-C, HDMI, BT 4.1
+- Hệ điều hành có sẵn: Windows 10 Home SL 64bit',
+0,
+'.\themes\images\products\lenovo-ideapad320-15IKB81BG.jpg',
+0,
+0);
+
+
+
 -- Dump completed on 2018-06-19 23:22:31
 
 
