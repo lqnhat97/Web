@@ -421,23 +421,7 @@ values (12,
 0,
 0);
 
-insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
-values (12,
-2,
-'Máy xách tay/ Laptop Dell Vostro 5468-VTI5019W (Vàng đồng)',
-16290000.0000,
-'- CPU Intel Core i5-7200U (2.5GHz - up to 3.1Ghz. 3MB Cache)
-- RAM 4GB DDR4 2133MHz
-- HDD 500GB SATA 5400rpm
-- VGA Intel HD Graphics 620
-- Màn hình: 14" HD (1366x768)
-- Trọng lượng: 1.7kg
-- Hệ điều hành: Win 10 Home',
-0,
-'.\themes\images\products\laptop-dell-vostro-5468-vti5019w-14-i5-7200u-4gb-ddr4-hdd-500gb-vang-2.jpg',
-0,
-0);
+
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
 created,view) 
