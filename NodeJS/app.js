@@ -1,5 +1,13 @@
-var repo=require('./repository/catalogRepo');
+//var repo=require('./repository/catalogRepo');
 var productRepo=require('./repository/productRepo');
 
-productRepo.loadAllProduct();
-repo.loadAllCatolog();
+//productRepo.loadAllProduct();
+//productRepo.countAsusProduct();
+//productRepo.loadAsusProduct();
+productRepo.countDellProduct();
+productRepo.loadDellProduct();
+//productRepo.countAcerProduct();
+//productRepo.countHPProduct();
+//productRepo.countLenovoProduct();
+
+//repo.loadAllCatolog();
