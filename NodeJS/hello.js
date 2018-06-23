@@ -25,5 +25,7 @@ exports.load=sql=>{
 			if(err) reject(err);
 			resolve(rows);
 		});
+
+		con.end();
 	})
 }

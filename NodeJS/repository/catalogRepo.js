@@ -2,9 +2,8 @@
 var db=require('../hello');
 
 exports.loadAllCatolog = () => {
-	db.load('select * from catalog').then(rows=>{
-		for (row of rows)
- 		console.log(row.id);
+	db.load('select count(*) from product where catalog_id=1').then(rows=>{
+ 		console.log(rows);
  	});
 }
 
