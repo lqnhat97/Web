@@ -1,9 +1,8 @@
-var db=require('../Vinh/db.js');
+var db=require('../db.js');
 
 exports.loadAllProduct = () => {
-	db.load('select * from product').then(rows=>{
- 		console.log(rows);
- 	});
+	var sql='select * from product';
+	return db.load(sql);
 }
 
 exports.loadAsusProduct=()=>{
