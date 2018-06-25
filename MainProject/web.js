@@ -26,7 +26,22 @@ app.get('/login',(req,res)=>{
 })
 
 app.get('/product_details',(req,res)=>{
-	res.render('product_details/product_details');
+	res.render('product/product_details');
+})
+
+app.get('/product_summary',(req,res)=>{
+	res.render('product/product_summary');
+})
+
+app.get('/products',(req,res)=>{
+	res.render('product/products');
+})
+
+app.get('/register',(req,res)=>{
+	var vm={
+		layout:false
+	}
+	res.render('register/register',vm);
 })
 
 app.listen(3000, () => {
