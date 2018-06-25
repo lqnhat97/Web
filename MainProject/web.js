@@ -7,7 +7,7 @@ var path=require('path');
 var app=express();
 
 app.engine('hbs', express_hbs({
-	defaultLayout:'administrator',
+	defaultLayout:'web',
 	layoutsDir:'views/layout/',
 	helpers:{
 		section: express_hbs_sections()
@@ -16,21 +16,18 @@ app.engine('hbs', express_hbs({
 app.set('view engine','hbs');
 
 app.use(express.static(path.resolve(__dirname,'themes')));
-	
-app.get('/', (req, res) => {
-	var vm={
-		home_active:true
-	}
-    res.render('home/admin_home',vm);
-});
 
-app.get('/warehouse/index', (req, res) => {
-	var vm={
-		warehouse_active:true
-	}
-    res.render('warehouse/admin_warehouse',vm);
-});
+app.get('/', (req,res)=>{
+	res.render('home/web_home');
+})
 
+app.get('/login',(req,res)=>{
+	res.render('login/login');
+})
+
+app.get('/product_details',(req,res)=>{
+	res.render('product_details/product_details');
+})
 
 app.listen(3000, () => {
     console.log('Site running on port 3000');
