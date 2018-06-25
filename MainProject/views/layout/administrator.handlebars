@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DASHBOARD</title>
+    <!-- Bootstrap style -->
+    <link id="callCss" rel="stylesheet" href="/bootshop/bootstrap.min.css" media="screen" />
+    <link href="/css/admin.css" rel="stylesheet" media="screen" />
+    <!-- Bootstrap style responsive -->
+    <link href="/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <!-- Google-code-prettify -->
+    <link href="/js/google-code-prettify/prettify.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Silde bar -->
+    <div id="mySidenav" class="sidenav nav-pills nav-stacked">
+        <p>~ADMIN~</p>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/" class="{{#if home_active}}actived{{/if}}">ĐƠN HÀNG</a>
+        <a href="/warehouse/index"class ="{{#if warehouse_active}}actived{{/if}}">KHO</a>
+        <a href="#">TÀI KHOẢN</a>
+        <a href="#">DOANH THU</a>
+    </div>
+        {{{body}}}
+    </div>
+    <script src="/js/admin.js"></script>
+    <script src="/js/jquery.js" type="text/javascript"></script>
+    <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/js/google-code-prettify/prettify.js"></script>
+    <script src="/js/bootshop.js"></script>
+    <script src="/js/jquery.lightbox-0.5.js"></script>
+</body>
+
+</html>
