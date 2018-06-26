@@ -1,7 +1,11 @@
 var express = require('express');
 var express_hbs=require('express-handlebars');
 var express_hbs_sections=require('express-handlebars-sections');
+var body_parser = require('body-parser');
 
+var web_homeController=require('./Controller/web_homeController');
+var web_productsController = require('./Controller/web_productsController')
+var web_prodetailController=require('./Controller/web_prodetailController')
 var path=require('path');
 
 var app=express();
@@ -16,29 +20,30 @@ app.engine('hbs', express_hbs({
 app.set('view engine','hbs');
 
 app.use(express.static(path.resolve(__dirname,'themes')));
+app.use(body_parser.json());
+app.use(body_parser.urlencoded({
+    extended: false
+}));
+//home
+app.use('/',web_homeController);
 
-app.get('/', (req,res)=>{
-	res.render('home/web_home');
-})
+//product
+app.use('/products',web_productsController)
+
+//product_detail
+app.use('/product_details',web_prodetailController)
 
 app.get('/login',(req,res)=>{
 	res.render('login/login');
 })
 
-app.get('/product_details',(req,res)=>{
-	res.render('product/product_details');
-})
+
 
 app.get('/product_summary',(req,res)=>{
 	res.render('product/product_summary');
 })
 
-app.get('/products',(req,res)=>{
-	var vm={
-		layout:false
-	}
-	res.render('product/products',vm);
-})
+
 
 app.get('/register',(req,res)=>{
 	var vm={

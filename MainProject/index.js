@@ -1,10 +1,14 @@
 var express = require('express');
 var express_hbs=require('express-handlebars');
 var express_hbs_sections=require('express-handlebars-sections');
+var body_parser = require('body-parser');
 
 var path=require('path');
+var homeController=require('./Controller/homeController');
+var warehouseController=require('./Controller/warehouseController');
 
 var app=express();
+
 
 app.engine('hbs', express_hbs({
 	defaultLayout:'administrator',
@@ -16,20 +20,12 @@ app.engine('hbs', express_hbs({
 app.set('view engine','hbs');
 
 app.use(express.static(path.resolve(__dirname,'themes')));
-	
-app.get('/', (req, res) => {
-	var vm={
-		home_active:true
-	}
-    res.render('home/admin_home',vm);
-});
-
-app.get('/warehouse/index', (req, res) => {
-	var vm={
-		warehouse_active:true
-	}
-    res.render('warehouse/admin_warehouse',vm);
-});
+app.use(body_parser.json());
+app.use(body_parser.urlencoded({
+    extended: false
+}));
+app.use('/',homeController);
+app.use('/warehouse',warehouseController);
 
 
 app.listen(3000, () => {
