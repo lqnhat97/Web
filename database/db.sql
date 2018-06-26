@@ -207,7 +207,7 @@ created,view)
 values (1,
 1,
 'Máy xách tay/ Laptop Asus X441NA-GA017T (N3350) (Vàng đồng)',
-6490.000,
+6490000.000,
 '- CPU: Intel® Celeron® Processor N3350 (1.10GHz, 2M Cache, up to 2.4 GHz)
 - Ram: 4GB DDR3L Bus 1600 Mhz
 - Ổ cứng: HDD500GB 5400rpm Hard Drive Sata
@@ -215,7 +215,7 @@ values (1,
 - Màn hình: 14.0 inch LED backlit HD (1366x768) 60Hz Glare Panel with 45% NTSC
 - Khối lượng: 1.78kg',
 0,
-'.\themes\images\products\Asus_X441NA.jpg',
+'images\\products\\Asus_X441NA.jpg',
 0,
 0);
 
@@ -233,7 +233,7 @@ values (2,
 - Trọng lượng: ~ 2kg
 - Hệ điề hành: Free DOS',
 0,
-'.\themes\images\products\asus-vivobook-x540up-go106d-11.jpg',
+'images\\products\\asus-vivobook-x540up-go106d-11.jpg',
 0,
 0);
 
@@ -251,7 +251,7 @@ values (3,
 - Trọng lượng: ~ 2.3kg
 - Hệ điều hành: Windows 10 Home - 64 bit',
 0,
-'.\themes\images\products\Asus-fx503vd-7.jpg',
+'images\\products\\Asus-fx503vd-7.jpg',
 0,
 0);
 
@@ -269,7 +269,7 @@ values (4,
 - Trọng lượng: ~ 2kg
 - Hệ điều hành: Free DOS',
 0,
-'.\themes\images\products\asus-x541ua-go1384.jpg',
+'images\\products\\asus-x541ua-go1384.jpg',
 0,
 0);
 
@@ -288,7 +288,7 @@ values (5,
 - Khối lượng: 1.6 kg
 - Hệ điều hành: Windows 10 Home SL 64bits',
 0,
-'.\themes\images\products\laptop_asus-s510uq-bq475t-15.6_i5-8250u_4gb_hdd-1tb-trang-4.jpg',
+'images\\products\\laptop_asus-s510uq-bq475t-15.6_i5-8250u_4gb_hdd-1tb-trang-4.jpg',
 0,
 0);
 
@@ -306,7 +306,7 @@ values (6,
 - Trọng lượng: ~ 2kg
 - Hệ điều hành: Free DOS',
 0,
-'.\themes\images\products\laptop-asus-x541uv-go607-15.6-i5-7200u-4gb-ddr4-hdd-1tb-den-2.jpg',
+'images\\products\\laptop-asus-x541uv-go607-15.6-i5-7200u-4gb-ddr4-hdd-1tb-den-2.jpg',
 0,
 0);
 
@@ -324,7 +324,7 @@ values (7,
 - Trọng lượng: 1,6kg
 - Hệ điều hành: Win 10',
 0,
-'.\themes\images\products\dell-inspiron14-7460-14i5259w.jpg',
+'images\\products\\dell-inspiron14-7460-14i5259w.jpg',
 0,
 0);
 
@@ -342,7 +342,7 @@ values (8,
 - Trọng lượng: 1.94kg
 - Hệ điều hành: Free DOS',
 0,
-'.\themes\images\products\10031690-mtxt-dell-vostro-14-3468-i5-4-1-70088614_1.jpg',
+'images\\products\\10031690-mtxt-dell-vostro-14-3468-i5-4-1-70088614_1.jpg',
 0,
 0);
 
@@ -360,7 +360,7 @@ values (9,
 - Trọng lượng: 2.1kg
 - Hệ điều hành: Free DOS',
 0,
-'.\themes\images\products\10030511-mtxt-dell-vostro-15-3568-vti35037-_en.jpg',
+'images\\products\\10030511-mtxt-dell-vostro-15-3568-vti35037-_en.jpg',
 0,
 0);
 
@@ -378,7 +378,7 @@ values (10,
 - Trọng lượng: 1,98kg
 - Hệ điều hành: Win 10 Home 64',
 0,
-'.\themes\images\products\dell-vostro-5568-077m52.jpg',
+'images\\products\\dell-vostro-5568-077m52.jpg',
 0,
 0);
 
@@ -399,7 +399,7 @@ values (11,
 - Khối lượng: 1.81 Kg, pin 4 cell
 - Hệ điều hành: Ko hệ điều hành (Không hỗ trợ Windows 7/8)',
 0,
-'.\themes\images\products\laptop-dell_inspiron-3467-c4i51107-14-i5-7200u-4gb-ddr4-hdd-1tb-xam-2.jpg',
+'images\\products\\laptop-dell_inspiron-3467-c4i51107-14-i5-7200u-4gb-ddr4-hdd-1tb-xam-2.jpg',
 0,
 0);
 
@@ -417,7 +417,7 @@ values (12,
 - Trọng lượng: 1.7kg
 - Hệ điều hành: Win 10 Home',
 0,
-'.\themes\images\products\laptop-dell-vostro-5468-vti5019w-14-i5-7200u-4gb-ddr4-hdd-500gb-vang-2.jpg',
+'images\\products\\laptop-dell-vostro-5468-vti5019w-14-i5-7200u-4gb-ddr4-hdd-500gb-vang-2.jpg',
 0,
 0);
 
@@ -439,7 +439,7 @@ values (13,
 ○ OTHER: 1.81 kg
 ○ WARRANTY: 12 tháng',
 0,
-'.\themes\images\products\laptop-dell-inspiron-14-3467-m20nr2.jpg',
+'images\\products\\laptop-dell-inspiron-14-3467-m20nr2.jpg',
 0,
 0);
 
@@ -457,7 +457,7 @@ values (14,
 - Trọng lượng: 2.06kg
 - Hệ điều hành: Win 10 Home',
 0,
-'.\themes\images\products\dell-inspiron14-5468-k5cdp1.jpg',
+'images\\products\\dell-inspiron14-5468-k5cdp1.jpg',
 0,
 0);
 
@@ -475,7 +475,7 @@ values (15,
 - Trọng lượng: 1.96kg
 - Hệ điều hành: Win 10 Home',
 0,
-'.\themes\images\products\dell-vostr-3468-f3468-70090697.jpg',
+'images\\products\\dell-vostr-3468-f3468-70090697.jpg',
 0,
 0);
 
@@ -490,7 +490,7 @@ RAM 8GB/HDD 1TB
 Đồ họa AMD Radeon 2GB
 Màn hình 14'' HD',
 0,
-'.\themes\images\products\dell-inspiron145468-f5468-70119161.jpg',
+'images\\products\\dell-inspiron145468-f5468-70119161.jpg',
 0,
 0);
 
@@ -507,7 +507,7 @@ values (17,
 - Trọng lượng: 2.4 kg
 - Hệ điều hành có sẵn:Dos',
 0,
-'.\themes\images\products\acer-f5-573-36LH.jpg',
+'images\\products\\acer-f5-573-36LH.jpg',
 0,
 0);
 
@@ -524,7 +524,7 @@ values (18,
 - Trọng lượng: 2.6 kg
 - Hệ điều hành có sẵn:Dos',
 0,
-'.\themes\images\products\acer-as-vx5-591g-70xm.jpg',
+'images\\products\\acer-as-vx5-591g-70xm.jpg',
 0,
 0);
 
@@ -540,7 +540,7 @@ values (19,
 - Display 14.0" FHD IPS
 - BT4/ Pin 3Cell/ Vỏ ALU/ Màu TRẮNG/ OS Windows 10SL',
 0,
-'.\themes\images\products\acer-swift-5-sf514-51-51pt.jpg',
+'images\\products\\acer-swift-5-sf514-51-51pt.jpg',
 0,
 0);
 
@@ -557,7 +557,7 @@ values (20,
 - Trọng lượng: 1.35kg
 - Hệ điều hành có sẵn:Dos',
 0,
-'.\themes\images\products\acer-swift-5-sf514-5-56f3.jpg',
+'images\\products\\acer-swift-5-sf514-5-56f3.jpg',
 0,
 0);
 
@@ -574,7 +574,7 @@ values (21,
 - Trọng lượng: 1.25kg
 - Hệ điều hành có sẵn: Window 10 Pro',
 0,
-'.\themes\images\products\acer-switch-alpha-12-sa5-271p-53cq2.jpg',
+'images\\products\\acer-switch-alpha-12-sa5-271p-53cq2.jpg',
 0,
 0);
 
@@ -591,7 +591,7 @@ values (22,
 - Trọng lượng: 2.5kg
 - Hệ điều hành có sẵn: Free DOS',
 0,
-'.\themes\images\products\acer-g3-572-70j1.jpg',
+'images\\products\\acer-g3-572-70j1.jpg',
 0,
 0);
 
@@ -609,7 +609,7 @@ values (23,
 - Trọng lượng: 2.5Kg
 - Hệ điều hành có sẵn: Free DOS',
 0,
-'.\themes\images\products\acser-as-vx5-591g-52yz.jpg',
+'images\\products\\acser-as-vx5-591g-52yz.jpg',
 0,
 0);
 
@@ -627,7 +627,7 @@ values (24,
 - Trọng lượng: 2.3kg
 - Hệ điều hành có sẵn: Free DOS',
 0,
-'.\themes\images\products\laptop-acer-e5-575g-39qw-15.6-i3-7100u-4gb-ddr4-hdd-500gb-den-1.jpg',
+'images\\products\\laptop-acer-e5-575g-39qw-15.6-i3-7100u-4gb-ddr4-hdd-500gb-den-1.jpg',
 0,
 0);
 
@@ -645,7 +645,7 @@ values (25,
 - Trọng lượng: 2.23 kg
 - Hệ điều hành có sẵn: Free DOS',
 0,
-'.\themes\images\products\laptop-acer_e5-575g-50th-15.6-i3-7200u-4gb-ddr4-hdd-1tb-den-1.jpg',
+'images\\products\\laptop-acer_e5-575g-50th-15.6-i3-7200u-4gb-ddr4-hdd-1tb-den-1.jpg',
 0,
 0);
 
@@ -662,7 +662,7 @@ values (26,
 - Trọng lượng: 2.1kg
 - Hệ điều hành có sẵn: Free DOS',
 0,
-'.\themes\images\products\acer-e5-475-31kc.jpg',
+'images\\products\\acer-e5-475-31kc.jpg',
 0,
 0);
 
@@ -682,7 +682,7 @@ values (27,
 - Trọng lượng:  2.04Kg
 - Kết nối: 2x USB 2.0, USB 3.0, USB-C, D-Sub, HDMI, BT 4.2, 4Cell, Finger print.',
 0,
-'.\themes\images\products\hp-probook-450-g4-z6t23pa.jpg',
+'images\\products\\hp-probook-450-g4-z6t23pa.jpg',
 0,
 0);
 
@@ -699,7 +699,7 @@ values (28,
 - HĐH: Win10SL
 - Màu sắc/ Chất liệu: Gold',
 0,
-'.\themes\images\products\laptop-hp-pavilion-15-au112tu-y4g17pa-mau-vang-1.jpg',
+'images\\products\\laptop-hp-pavilion-15-au112tu-y4g17pa-mau-vang-1.jpg',
 0,
 0);
 
@@ -716,7 +716,7 @@ values (29,
 - Trọng lượng: 1.5 Kg
 - Hệ điều hành có sẵn: Free Dos',
 0,
-'.\themes\images\products\hp_probook_430_g4_1.jpg',
+'images\\products\\hp_probook_430_g4_1.jpg',
 0,
 0);
 
@@ -733,7 +733,7 @@ values (30,
 - Trọng lượng: 1.32 Kg
 - Hệ điều hành có sẵn: Window 10 Home',
 0,
-'.\themes\images\products\laptop-hp-spectre-x360-ac028tu-1hp09pa-3.jpg',
+'images\\products\\laptop-hp-spectre-x360-ac028tu-1hp09pa-3.jpg',
 0,
 0);
 
@@ -750,7 +750,7 @@ values (31,
 - Trọng lượng: 1.9 Kg
 - Hệ điều hành có sẵn: Free Dos',
 0,
-'.\themes\images\products\hp-15-bs553tu-03.jpg',
+'images\\products\\hp-15-bs553tu-03.jpg',
 0,
 0);
 
@@ -772,7 +772,7 @@ values (32,
 - OS : Windows 10 Home SL 64bits
 - Bảo hành 12 tháng',
 0,
-'.\themes\images\products\hp-pavilion-15-au119tx.jpg',
+'images\\products\\hp-pavilion-15-au119tx.jpg',
 0,
 0);
 
@@ -789,7 +789,7 @@ values (33,
 - Trọng lượng: 1.7 kg
 - Hệ điều hành có sẵn: Win 10',
 0,
-'.\themes\images\products\hp-pavilion-x360-14-ba062TU.jpg',
+'images\\products\\hp-pavilion-x360-14-ba062TU.jpg',
 0,
 0);
 
@@ -806,7 +806,7 @@ values (34,
 - Trọng lượng: 2.16 kg
 - Hệ điều hành có sẵn: Free Dos',
 0,
-'.\themes\images\products\hp-pavilion-15-cc048tx.jpg',
+'images\\products\\hp-pavilion-15-cc048tx.jpg',
 0,
 0);
 
@@ -823,7 +823,7 @@ values (35,
 - Trọng lượng: 1.63 kg
 - Hệ điều hành có sẵn: Free Dos',
 0,
-'.\themes\images\products\hp-pavilion-14-bf015tu.jpg',
+'images\\products\\hp-pavilion-14-bf015tu.jpg',
 0,
 0);
 
@@ -843,7 +843,7 @@ values (36,
 ○ OTHER: 1.62kg, USB 3.1, 1x HDMI
 ○ WARRANTY: 12 Tháng',
 0,
-'.\themes\images\products\hp-pavilion-14-bf016tu.jpg',
+'images\\products\\hp-pavilion-14-bf016tu.jpg',
 0,
 0);
 
@@ -860,7 +860,7 @@ values (37,
 - Trọng lượng: 2.3kg
 - Hệ điều hành có sẵn: Free Dos',
 0,
-'.\themes\images\products\lenovo-g5070-5942-3771-black_1.jpg',
+'images\\products\\lenovo-g5070-5942-3771-black_1.jpg',
 0,
 0);
 
@@ -879,7 +879,7 @@ values (38,
 - Khối lượng: 1.74 kg
 - Hệ điều hành có sẵn: Windows 10 Home SL 64bit',
 0,
-'.\themes\images\products\laptop-lenovo-yoga-520-14ikb.jpg',
+'images\\products\\laptop-lenovo-yoga-520-14ikb.jpg',
 0,
 0);
 
@@ -895,7 +895,7 @@ values (39,
 - Display 15.6" FHD
 - HĐH Windows 10',
 0,
-'.\themes\images\products\lenovo_ideapad320.jpg',
+'images\\products\\lenovo_ideapad320.jpg',
 0,
 0);
 
@@ -910,7 +910,7 @@ values (40,
 - Ổ cứng: HDD: 500 GB
 - Màn hình: 14 inch, HD (1366 x 768)',
 0,
-'.\themes\images\products\lenovo-yoga-520-14ikb-i3-7130u-80x80106vn-xam-3-2-org.jpg',
+'images\\products\\lenovo-yoga-520-14ikb-i3-7130u-80x80106vn-xam-3-2-org.jpg',
 0,
 0);
 
@@ -926,7 +926,7 @@ values (41,
 - Kiểu dáng nhỏ gọn, dễ dàng mang theo.
 - Màu sắc tinh tế, rất được ưa thích.',
 0,
-'.\themes\images\products\lenovo-yoga520-14IKBR-81C800.jpg',
+'images\\products\\lenovo-yoga520-14IKBR-81C800.jpg',
 0,
 0);
 
@@ -944,7 +944,7 @@ values (42,
 - Kết nối: USB 3.0, USB-C, HDMI, BT 4.1
 - Hệ điều hành có sẵn: Windows 10 Home SL 64bit',
 0,
-'.\themes\images\products\lenovo-ideapad320-15IKB81BG.jpg',
+'images\\products\\lenovo-ideapad320-15IKB81BG.jpg',
 0,
 0);
 
