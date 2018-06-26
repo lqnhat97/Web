@@ -34,7 +34,10 @@ app.get('/product_summary',(req,res)=>{
 })
 
 app.get('/products',(req,res)=>{
-	res.render('product/products');
+	var vm={
+		layout:false
+	}
+	res.render('product/products',vm);
 })
 
 app.get('/register',(req,res)=>{
@@ -42,6 +45,62 @@ app.get('/register',(req,res)=>{
 		layout:false
 	}
 	res.render('register/register',vm);
+})
+
+app.get('/compair',(req,res)=>{
+	var vm={
+		layout:false
+	}
+	res.render('compair/compair',vm);
+})
+
+app.get('/contact',(req,res)=>{
+	var vm={
+		layout:false
+	}
+	res.render('contact/contact',vm);
+})
+
+app.get('/faq',(req,res)=>{
+	var vm={
+		layout:false
+	}
+	res.render('faq/faq',vm);
+})
+
+app.get('/forgetpass',(req,res)=>{
+	var vm={
+		layout:false
+	}
+	res.render('forgetpass/forgetpass',vm);
+})
+
+app.get('/legal_notice',(req,res)=>{
+	var vm={
+		layout:false
+	}
+	res.render('legal_notice/legal_notice',vm);
+})
+
+app.get('/normal',(req,res)=>{
+	var vm={
+		layout:false
+	}
+	res.render('delivery/normal',vm);
+})
+
+app.get('/special_offer',(req,res)=>{
+	var vm={
+		layout:false
+	}
+	res.render('special_offer/special_offer',vm);
+})
+
+app.get('/tac',(req,res)=>{
+	var vm={
+		layout:false
+	}
+	res.render('tac/tac',vm);
 })
 
 app.listen(3000, () => {

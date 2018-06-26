@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+   <title>NaViStore - Laptop chính hãng 100%</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+<!--Less styles -->
+   <!-- Other Less css file //different less files has different color scheam
+	<link rel="stylesheet/less" type="text/css" href="less/simplex.less">
+	<link rel="stylesheet/less" type="text/css" href="less/classified.less">
+	<link rel="stylesheet/less" type="text/css" href="less/amelia.less">  MOVE DOWN TO activate
+	-->
+	<!--<link rel="stylesheet/less" type="text/css" href="less/bootshop.less">
+	<script src="js/less.js" type="text/javascript"></script> -->
+	
+<!-- Bootstrap style --> 
+    <link id="callCss" rel="stylesheet" href="bootshop/bootstrap.min.css" media="screen"/>
+    <link href="css/base.css" rel="stylesheet" media="screen"/>
+<!-- Bootstrap style responsive -->	
+	<link href="css/bootstrap-responsive.min.css" rel="stylesheet"/>
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<!-- Google-code-prettify -->	
+	<link href="js/google-code-prettify/prettify.css" rel="stylesheet"/>
+<!-- fav and touch icons -->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+	<style type="text/css" id="enject"></style>
+  </head>
+<body>
+<div id="header">
+<div class="container">
+<div id="welcomeLine" class="row">
+	<div class="span6">Chào mừng!<strong> Khách hàng</strong></div>
+	<div class="span6">
+	<div class="pull-right">
+	<a href="/product_summary"><span class="">Tổng tiền:</span></a>
+		<a href="/product_summary" id="cost">50,000,000</a>
+		<a href="/product_summary"><span class="">VND</span></a>
+		<a href="/product_summary"><span class="btn btn-mini btn-primary"><i class="icon-shopping-cart icon-white"></i> Bạn có 3 sản phẩm trong giỏ hàng </span> </a> 
+	</div>
+	</div>
+</div>
+<!-- Navbar ================================================== -->
+<div id="logoArea" class="navbar">
+<a id="smallScreen" data-target="#topMenu" data-toggle="collapse" class="btn btn-navbar">
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+</a>
+  <div class="navbar-inner">
+    <a class="brand" href="/"><img src="images/logo.png" alt="Bootsshop"/></a>
+		<form class="form-inline navbar-search" method="post" action="/products" >
+		<input id="srchFld" class="srchTxt" type="text" />
+		  <select class="srchTxt">
+			<option>Tất cả</option>
+			<option>ASUS </option>
+			<option>DELL </option>
+			<option>ACER </option>
+			<option>HP </option>
+			<option>LENOVO</option>
+		</select> 
+		  <button type="submit" id="submitButton" class="btn btn-primary">Tìm</button>
+    </form>
+    <ul id="topMenu" class="nav pull-right">
+	 <li class=""><a href="special_offer.html">Khuyến mãi</a></li>
+	 <li class=""><a href="normal.html">Giao hàng</a></li>
+	 <li class=""><a href="contact.html">Liên lạc</a></li>
+	 <li class="">
+	 <a href="#login" role="button" data-toggle="modal" style="padding-right:0"><span class="btn btn-large btn-success">Đăng nhập</span></a>
+	<div id="login" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="false" >
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3>Đăng nhập</h3>
+		  </div>
+		  <div class="modal-body">
+			<form class="form-horizontal loginFrm">
+			  <div class="control-group">								
+				<input type="text" id="inputEmail" placeholder="Tài khoản">
+			  </div>
+			  <div class="control-group">
+				<input type="password" id="inputPassword" placeholder="Mật khẩu">
+			  </div>
+			  <div class="control-group">
+				<label class="checkbox">
+				<input type="checkbox">Ghi nhớ mật khẩu.
+				</label>
+			  </div>
+			</form>		
+			<button type="submit" class="btn btn-success">Đăng nhập</button>
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Đóng</button>
+		  </div>
+	</div>
+	</li>
+    </ul>
+  </div>
+</div>
+</div>
+</div>
+<!-- Header End====================================================================== -->
+<div id="mainBody">
+	<div class="container">
+	<div class="row">
+<!-- Sidebar ================================================== -->
+	<div id="sidebar" class="span3">
+		<div class="well well-small"><a id="myCart" href="/product_summary"><img src="images/ico-cart.png" alt="cart">Có 3 sản phẩm <span class="badge badge-warning pull-right">50,000,000₫</span></a></div>
+		<ul id="sideManu" class="nav nav-tabs nav-stacked">
+			<li class="subMenu open"><a> ASUS [175]</a>
+				<ul>
+				<li><a class="active" href="/products"><i class="icon-chevron-right"></i>Tất cả (175) </a></li>
+				<li><a href="/products"><i class="icon-chevron-right"></i>Dưới 5 triệu (30)</a></li>
+				<li><a href="/products"><i class="icon-chevron-right"></i>Từ 5 - 10 triệu (80)</a></li>
+				<li><a href="/products"><i class="icon-chevron-right"></i>Từ 10 - 15 triệu (15)</a></li>
+				<li><a href="/products"><i class="icon-chevron-right"></i>Từ 15 - 20 triệu (15)</a></li>
+				<li><a href="/products"><i class="icon-chevron-right"></i>Từ 20 - 25 triệu (15)</a></li>
+				<li><a href="/products"><i class="icon-chevron-right"></i>Từ 25 - 30 triệu (15)</a></li>
+				<li><a href="/products"><i class="icon-chevron-right"></i>Trên 30 triệu (15)</a></li>
+				</ul>
+			</li>
+			<li class="subMenu"><a> DELL [175] </a>
+			<ul style="display:none">
+				<li><a href="/products"><i class="icon-chevron-right"></i>Tất cả (175)</a></li>
+				<li><a href="/products"><i class="icon-chevron-right"></i>Dưới 5 triệu (30)</a></li>
+				<li><a href="/products"><i class="icon-chevron-right"></i>Từ 5 - 10 triệu (80)</a></li>
+				<li><a href="/products"><i class="icon-chevron-right"></i>Từ 10 - 15 triệu (15)</a></li>
+				<li><a href="/products"><i class="icon-chevron-right"></i>Từ 15 - 20 triệu (15)</a></li>
+				<li><a href="/products"><i class="icon-chevron-right"></i>Từ 20 - 25 triệu (15)</a></li>
+				<li><a href="/products"><i class="icon-chevron-right"></i>Từ 25 - 30 triệu (15)</a></li>
+				<li><a href="/products"><i class="icon-chevron-right"></i>Trên 30 triệu (15)</a></li>											
+			</ul>
+			</li>
+			<li class="subMenu"><a>ACER[175]</a>
+				<ul style="display:none">
+				<li><a href="/products"><i class="icon-chevron-right"></i>Tất cả (175)</a></li>
+				<li><a href="/products"><i class="icon-chevron-right"></i>Dưới 5 triệu (30)</a></li>
+				<li><a href="/products"><i class="icon-chevron-right"></i>Từ 5 - 10 triệu (80)</a></li>
+				<li><a href="/products"><i class="icon-chevron-right"></i>Từ 10 - 15 triệu (15)</a></li>
+				<li><a href="/products"><i class="icon-chevron-right"></i>Từ 15 - 20 triệu (15)</a></li>
+				<li><a href="/products"><i class="icon-chevron-right"></i>Từ 20 - 25 triệu (15)</a></li>
+				<li><a href="/products"><i class="icon-chevron-right"></i>Từ 25 - 30 triệu (15)</a></li>
+				<li><a href="/products"><i class="icon-chevron-right"></i>Trên 30 triệu (15)</a></li>												
+			</ul>
+			</li>
+			<li class="subMenu"><a>HP[180]</a>
+				<ul style="display:none">
+					<li><a href="/products"><i class="icon-chevron-right"></i>Tất cả (180)</a></li>
+					<li><a href="/products"><i class="icon-chevron-right"></i>Dưới 5 triệu (30)</a></li>
+					<li><a href="/products"><i class="icon-chevron-right"></i>Từ 5 - 10 triệu (80)</a></li>
+					<li><a href="/products"><i class="icon-chevron-right"></i>Từ 10 - 15 triệu (20)</a></li>
+					<li><a href="/products"><i class="icon-chevron-right"></i>Từ 15 - 20 triệu (15)</a></li>
+					<li><a href="/products"><i class="icon-chevron-right"></i>Từ 20 - 25 triệu (15)</a></li>
+					<li><a href="/products"><i class="icon-chevron-right"></i>Từ 25 - 30 triệu (15)</a></li>
+					<li><a href="/products"><i class="icon-chevron-right"></i>Trên 30 triệu (15)</a></li>												
+				</ul>
+			</li>
+			<li class="subMenu"><a >LENOVO [60]</a>
+				<ul style="display:none">
+					<li><a href="/products"><i class="icon-chevron-right"></i>Tất cả (60)</a></li>
+					<li><a href="/products"><i class="icon-chevron-right"></i>Dưới 5 triệu (0)</a></li>
+					<li><a href="/products"><i class="icon-chevron-right"></i>Từ 5 - 10 triệu (0)</a></li>
+					<li><a href="/products"><i class="icon-chevron-right"></i>Từ 10 - 15 triệu (15)</a></li>
+					<li><a href="/products"><i class="icon-chevron-right"></i>Từ 15 - 20 triệu (15)</a></li>
+					<li><a href="/products"><i class="icon-chevron-right"></i>Từ 20 - 25 triệu (15)</a></li>
+					<li><a href="/products"><i class="icon-chevron-right"></i>Từ 25 - 30 triệu (15)</a></li>
+					<li><a href="/products"><i class="icon-chevron-right"></i>Trên 30 triệu (15)</a></li>												
+				</ul>
+			</li>
+			<li class="subMenu"><a>OTHER[14]</a>
+				<ul style="display:none">
+					<li><a href="/products"><i class="icon-chevron-right"></i>Tất cả (14)</a></li>
+					<li><a href="/products"><i class="icon-chevron-right"></i>Dưới 5 triệu (0)</a></li>
+					<li><a href="/products"><i class="icon-chevron-right"></i>Từ 5 - 10 triệu (0)</a></li>
+					<li><a href="/products"><i class="icon-chevron-right"></i>Từ 10 - 15 triệu (10)</a></li>
+					<li><a href="/products"><i class="icon-chevron-right"></i>Từ 15 - 20 triệu (1)</a></li>
+					<li><a href="/products"><i class="icon-chevron-right"></i>Từ 20 - 25 triệu (1)</a></li>
+					<li><a href="/products"><i class="icon-chevron-right"></i>Từ 25 - 30 triệu (1)</a></li>
+					<li><a href="/products"><i class="icon-chevron-right"></i>Trên 30 triệu (1)</a></li>												
+				</ul>
+			</li>
+		</ul>
+		<br/>
+		  <div class="thumbnail">
+			<img src="images//products_X441NA.jpg" />
+			<div class="caption">
+			  <h5>Laptop Asus X441NA-GA017T (N3350) (Vàng đồng)</h5>
+				<h4 style="text-align:center"><a class="btn" href="/product_details"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Thêm vào giỏ hàng <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">6.490.000 ₫</a></h4>
+			</div>
+		  </div><br/>
+			<div class="thumbnail">
+				<img src="images//productsvo-g5070-5942-3771-black_1.jpg" title="Laptop Lenovo G5070-6676 (Đen)">
+				<div class="caption">
+				  <h5>Laptop Lenovo G5070-6676 (Đen)</h5>
+				    <h4 style="text-align:center"><a class="btn" href="/product_details"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Thêm vào giỏ hàng <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">7.890.000 ₫</a></h4>
+				</div>
+			  </div><br/>
+			<div class="thumbnail">
+				<img src="images/payment_methods.png" title="Phương thức thanh toán" alt="Payments Methods">
+				<div class="caption">
+				  <h5>Phương thức thanh toán</h5>
+				</div>
+			  </div>
+	</div>
+<!-- Sidebar end=============================================== -->
+	<div class="span9">
+    <ul class="breadcrumb">
+		<li><a href="/">Trang chủ</a> <span class="divider">/</span></li>
+		<li class="active">So sánh sản phẩm</li>
+    </ul>
+	<h3> So sánh sản phẩm<small class="pull-right"> So sánh [2] sản phẩm </small></h3>	
+	<hr class="soft"/>
+
+	<table id="compairTbl" class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Tên sản phẩm</th>
+                  <th>Laptop Asus X540UP-GO106D (I3-7100U) (Đen) </th>
+                  <th>Laptop Asus S510UQ-BQ475T (I5-8250U) (Vàng đồng)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td style="text-align:center">
+					<p class="justify">
+						- CPU Intel Core i3-7100U (2.4GHz, 3MB Cache)<br>
+						- RAM 4GB DDR4 - 2133MHz<br>
+						- HDD 1TB 5400rpm<br>
+						- VGA AMD Radeon R5 M420 2GB DDR3 + Intel HD Graphics 620<br>
+						- Màn hính: 15.6" HD (1366 x 768)<br>
+						- Trọng lượng: ~ 2kg<br>
+						- Hệ điề hành: Free DOS<br>
+					</p>
+				<img src="images//products-vivobook-x540up-go106d-11.jpg" alt=""/>
+				<form class="form-horizontal qtyFrm">
+				<h3> 10.190.000 ₫</h3><br/>
+				 <a href="/product_details" class="btn btn-large btn-primary"> Thêm vào giỏ hàng <i class=" icon-shopping-cart"></i></a>
+				 <a href="/product_details" class="btn btn-large"><i class="icon-zoom-in"></i></a>
+				</form>
+				</td>
+                  <td>
+				  <p class="justify">
+					- CPU: Intel Core i5-8250U (1.6GHz Up to 3.4GHz, 6MB Cache)<br>
+					- RAM: 1x4GB, DDR4, 2400MHz, 2 Slots<br>
+					- Ổ cứng: HDD 1TB 5400rpm, Khe mở rộng: M.2 2280 Sata<br>
+					- VGA: NVIDIA GeForce GT940MX 2GB GDDR5 + Intel UHD Graphics 620<br>
+					- Màn hình: : 15.6 INCH, 1920x1080, Webcam HD, Led_KB<br>
+					- Kết nối: 2x USB 2.0, USB 3.0, USB-C, HDMI, BT 4.2<br>
+					- Khối lượng: 1.6 kg<br>
+					- Hệ điều hành: Windows 10 Home SL 64bits<br>
+				</p>
+				<img src="images//productsop_asus-s510uq-bq475t-15.6_i5-8250u_4gb_hdd-1tb-trang-4.jpg" alt=""/>
+				
+				<form class="form-horizontal qtyFrm">
+				<h3> 17.290.000 ₫</h3>
+				<br/>
+				 <a href="/product_details" class="btn btn-large btn-primary"> Thêm vào giỏ hàng <i class=" icon-shopping-cart"></i></a>
+				 <a href="/product_details" class="btn btn-large"><i class="icon-zoom-in"></i></a>
+				</form>
+				  </td>
+                </tr>
+              </tbody>
+            </table>		
+	<a href="/products" class="btn btn-large pull-right">Về trang sản phẩm</a>
+	
+	
+</div>
+</div>
+</div>
+</div>
+<!-- MainBody End ============================= -->
+<!-- Footer ================================================================== -->
+	<div  id="footerSection">
+	<div class="container">
+		<div class="row">
+			<div class="span3">
+				<h5>TÀI KHOẢN</h5>
+				<a href="/login">QUẢN LÝ TÀI KHOẢN</a>
+				<a href="/login">THÔNG TIN CÁ NHÂN</a> 
+				<a href="/login">ĐỊA CHỈ</a> 
+				<a href="/login">GIẢM GIÁ</a>  
+				<a href="/login">LỊCH SỬ MUA HÀNG</a>
+			 </div>
+			<div class="span3">
+				<h5>THÔNG TIN</h5>
+				<a href="contact.html">LIÊN LẠC</a>  
+				<a href="register.html">ĐĂNG KÝ</a>  
+				<a href="legal_notice.html">GHI CHÚ</a>  
+				<a href="tac.html">ĐIỀU KHOẢN</a> 
+				<a href="faq.html">FAQ</a>
+			 </div>
+			<div class="span3">
+				<h5>CÓ THỂ BẠN THÍCH</h5>
+				<a href="#">SẢN PHẨM MỚI</a> 
+				<a href="#">SẢN PHẨM BÁN CHẠY</a>  
+				<a href="special_offer.html">SIÊU KHUYẾN MÃI</a>  
+				<a href="#">NHÀ SẢN XUẤT</a> 
+				<a href="#">NHÀ CUNG CẤP</a> 
+			 </div>
+			<div id="socialMedia" class="span3 pull-right">
+				<h5>MẠNG XÃ HỘI </h5>
+				<a href="https://www.facebook.com/"><img width="60" height="60" src="images/facebook.png" title="facebook" alt="facebook"/></a>
+				<a href="https://twitter.com"><img width="60" height="60" src="images/twitter.png" title="twitter" alt="twitter"/></a>
+				<a href="https://www.youtube.com"><img width="60" height="60" src="images/youtube.png" title="youtube" alt="youtube"/></a>
+			 </div> 
+		 </div>
+		<p class="pull-right">&copy; Laptop Online Chính Hãng Việt Nam 100% RÂUDUBAI</p>
+	</div><!-- Container End -->
+	</div>
+<!-- Placed at the end of the document so the pages load faster ============================================= -->
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/google-code-prettify/prettify.js"></script>
+	
+	<script src="js/bootshop.js"></script>
+    <script src="js/jquery.lightbox-0.5.js"></script>
+	
+	
+</body>
+</html>
