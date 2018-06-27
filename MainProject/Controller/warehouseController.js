@@ -32,12 +32,14 @@ router.post('/add',(req,res)=>{
             add_ok: true,
             layout:false
         }
+        console.log(rows);
         res.render('warehouse/warehouse_addproduct',ok);
     }).catch(err=>{
         var f = {
             layout:false,
             add_ok: false
         }
+        console.log('err');
         res.render('warehouse/warehouse_addproduct',f);
 	});
 })

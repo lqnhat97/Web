@@ -2,30 +2,18 @@
                 <!-- Sidebar end=============================================== -->
                 <div class="span9">
                     <ul class="breadcrumb">
-                        <li><a href="index.html">Trang chủ</a> <span class="divider">/</span></li>
+                        <li><a href="/">Trang chủ</a> <span class="divider">/</span></li>
                         <li class="active">Đăng ký</li>
                     </ul>
                     <h3> Đăng ký</h3>
                     <div class="well">
-                        <!--
-	<div class="alert alert-info fade in">
-		<button type="button" class="close" data-dismiss="alert">×</button>
-		<strong>Lorem Ipsum is simply dummy</strong> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-	 </div>
-	<div class="alert fade in">
-		<button type="button" class="close" data-dismiss="alert">×</button>
-		<strong>Lorem Ipsum is simply dummy</strong> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-	 </div>
-	 <div class="alert alert-block alert-error fade in">
-		<button type="button" class="close" data-dismiss="alert">×</button>
-		<strong>Lorem Ipsum is simply</strong> dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-	 </div> -->
-                        <form class="form-horizontal">
+                        
+                        <form class="form-horizontal" action="" method="POST" role="form">
                             <h4>Thông tin cá nhân</h4>
                             <div class="control-group">
                                 <label class="control-label">Bạn là ? <sup>*</sup></label>
                                 <div class="controls">
-                                    <select class="span1" name="days">
+                                    <select class="span1" name="sex">
                                         <option value="">-</option>
                                         <option value="1">Nam</option>
                                         <option value="2">Nữ</option>
@@ -33,28 +21,23 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="control-group">
-                                <label class="control-label" for="inputFname1">Họ, chữ lót <sup>*</sup></label>
-                                <div class="controls">
-                                    <input type="text" id="inputFname1" placeholder="Hoàng Nguyễn Quốc">
-                                </div>
-                            </div>
+                            
                             <div class="control-group">
                                 <label class="control-label" for="inputLnam">Tên <sup>*</sup></label>
                                 <div class="controls">
-                                    <input type="text" id="inputLnam" placeholder="Vinh">
+                                    <input type="text" id="inputLnam" placeholder="Vinh" name="name">
                                 </div>
                             </div>
                             <div class="control-group">
                                 <label class="control-label" for="input_email">Email <sup>*</sup></label>
                                 <div class="controls">
-                                    <input type="text" id="input_email" placeholder="Email">
+                                    <input type="text" id="input_email" placeholder="Email" name="email"> 
                                 </div>
                             </div>
                             <div class="control-group">
                                 <label class="control-label" for="inputPassword1">Mật khẩu <sup>*</sup></label>
                                 <div class="controls">
-                                    <input type="password" id="inputPassword1" placeholder="Mật khẩu">
+                                    <input type="password" id="inputPassword1" placeholder="Mật khẩu" name="password">
                                 </div>
                             </div>
                             <div class="control-group">
@@ -74,82 +57,22 @@
                             </div>
                             <div class="alert alert-block alert-error fade in">
                                 <button type="button" class="close" data-dismiss="alert">×</button>
-                                <strong>Chú ý: </strong>Khi bạn hoàn tất đăng kí sẽ có mail xác nhận gửi đến địa chỉ email mà bạn đăng dùng để đăng kí tài khoản tại NaViShop
+                                <strong>Chú ý: </strong>Vui lòng điền đầy đủ thông tin
                             </div>
                             <h4>Thông tin thêm</h4>
                             <div class="control-group">
                                 <label class="control-label" for="city">Tỉnh thành <sup>*</sup></label>
                                 <div class="controls">
-                                    <input type="text" id="city" placeholder="Hồ Chí Minh" />
+                                    <input type="text" id="city" placeholder="Hồ Chí Minh" name="city" />
                                 </div>
                             </div>
                             <div class="control-group">
                                 <label class="control-label" for="address">Địa chỉ <sup>*</sup></label>
                                 <div class="controls">
-                                    <input type="text" id="address" placeholder="323/4 Lê Quang Định" /> <span>Số nhà, tên đường</span>
+                                    <input type="text" id="address" placeholder="323/4 Lê Quang Định" name="address" /> <span>Số nhà, tên đường</span>
                                 </div>
                             </div>
-                            <div class="control-group">
-                                <label class="control-label" for="state">Tỉnh thành <sup>*</sup></label>
-                                <div class="controls">
-                                    <select id="state">
-                                        <option value="">-</option>
-                                        <option value="1">Alabama</option>
-                                        <option value="2">Alaska</option>
-                                        <option value="3">Arizona</option>
-                                        <option value="4">Arkansas</option>
-                                        <option value="5">California</option>
-                                        <option value="6">Colorado</option>
-                                        <option value="7">Connecticut</option>
-                                        <option value="8">Delaware</option>
-                                        <option value="53">District of Columbia</option>
-                                        <option value="9">Florida</option>
-                                        <option value="10">Georgia</option>
-                                        <option value="11">Hawaii</option>
-                                        <option value="12">Idaho</option>
-                                        <option value="13">Illinois</option>
-                                        <option value="14">Indiana</option>
-                                        <option value="15">Iowa</option>
-                                        <option value="16">Kansas</option>
-                                        <option value="17">Kentucky</option>
-                                        <option value="18">Louisiana</option>
-                                        <option value="19">Maine</option>
-                                        <option value="20">Maryland</option>
-                                        <option value="21">Massachusetts</option>
-                                        <option value="22">Michigan</option>
-                                        <option value="23">Minnesota</option>
-                                        <option value="24">Mississippi</option>
-                                        <option value="25">Missouri</option>
-                                        <option value="26">Montana</option>
-                                        <option value="27">Nebraska</option>
-                                        <option value="28">Nevada</option>
-                                        <option value="29">New Hampshire</option>
-                                        <option value="30">New Jersey</option>
-                                        <option value="31">New Mexico</option>
-                                        <option value="32">New York</option>
-                                        <option value="33">North Carolina</option>
-                                        <option value="34">North Dakota</option>
-                                        <option value="35">Ohio</option>
-                                        <option value="36">Oklahoma</option>
-                                        <option value="37">Oregon</option>
-                                        <option value="38">Pennsylvania</option>
-                                        <option value="51">Puerto Rico</option>
-                                        <option value="39">Rhode Island</option>
-                                        <option value="40">South Carolina</option>
-                                        <option value="41">South Dakota</option>
-                                        <option value="42">Tennessee</option>
-                                        <option value="43">Texas</option>
-                                        <option value="52">US Virgin Islands</option>
-                                        <option value="44">Utah</option>
-                                        <option value="45">Vermont</option>
-                                        <option value="46">Virginia</option>
-                                        <option value="47">Washington</option>
-                                        <option value="48">West Virginia</option>
-                                        <option value="49">Wisconsin</option>
-                                        <option value="50">Wyoming</option>
-                                    </select>
-                                </div>
-                            </div>
+                            
                             <div class="control-group">
                                 <label class="control-label" for="aditionalInfo">Thông tin thêm</label>
                                 <div class="controls">
@@ -159,7 +82,7 @@
                             <div class="control-group">
                                 <label class="control-label" for="mobile">Điện thoại <sup>*</sup> </label>
                                 <div class="controls">
-                                    <input type="text" name="mobile" id="mobile" placeholder="0123456789" />
+                                    <input type="text"  id="mobile" placeholder="0123456789" name="phone" />
                                 </div>
                             </div>
                             <p style="color: red;"><sup>(*)</sup> Không được bỏ trống</p>
@@ -168,12 +91,21 @@
                             </div>
                             <div class="control-group">
                                 <div class="controls">
-                                    <input type="hidden" name="email_create" value="1">
-                                    <input type="hidden" name="is_new_customer" value="1">
-                                    <input class="btn btn-large btn-success" type="submit" value="Đăng ký" />
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    
                                 </div>
                             </div>
                         </form>
+                        {{#if add_ok}}
+                        <div class="alert alert-success">
+                            <strong>Success!</strong> Thêm sản phẩm thành công.
+                        </div>
+                        {{/if}}
+                        {{#if add_false}}
+                        <div class="alert alert-danger">
+                            <strong>Danger!</strong> Thêm sản phẩm thất bại.
+                        </div>
+                        {{/if}}
                     </div>
                 </div>
             </div>

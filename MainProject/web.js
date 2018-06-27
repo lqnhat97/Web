@@ -6,6 +6,7 @@ var body_parser = require('body-parser');
 var web_homeController=require('./Controller/web_homeController');
 var web_productsController = require('./Controller/web_productsController')
 var web_prodetailController=require('./Controller/web_prodetailController')
+var web_register=require('./Controller/web_register');
 var path=require('path');
 
 var app=express();
@@ -33,6 +34,11 @@ app.use('/products',web_productsController)
 //product_detail
 app.use('/product_details',web_prodetailController)
 
+
+//register
+app.use('/register', web_register)
+
+
 app.get('/login',(req,res)=>{
 	res.render('login/login');
 })
@@ -44,9 +50,7 @@ app.get('/product_summary',(req,res)=>{
 })
 
 
-app.get('/register',(req,res)=>{
-	res.render('register/register');
-})
+
 
 app.get('/compair',(req,res)=>{
 	var vm={
