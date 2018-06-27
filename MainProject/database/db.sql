@@ -4,6 +4,7 @@
 -- ------------------------------------------------------
 -- Server version	8.0.11
 
+use navistore;
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -110,6 +111,8 @@ CREATE TABLE `product` (
   `image_link` varchar(500) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `created` int(11) NOT NULL DEFAULT '0',
   `view` int(11) NOT NULL DEFAULT '0',
+  `sell` int(11) NOT NULL default '0',
+  `stock` int (11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   FULLTEXT KEY `name` (`name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -203,11 +206,11 @@ insert into catalog(id,name,parent_id,sort_order) values (4,'HP',0,0);
 insert into catalog(id,name,parent_id,sort_order) values (5,'LENOVO',0,0);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (1,
 1,
 'Máy xách tay/ Laptop Asus X441NA-GA017T (N3350) (Vàng đồng)',
-6490.000,
+6490000.000,
 '- CPU: Intel® Celeron® Processor N3350 (1.10GHz, 2M Cache, up to 2.4 GHz)
 - Ram: 4GB DDR3L Bus 1600 Mhz
 - Ổ cứng: HDD500GB 5400rpm Hard Drive Sata
@@ -215,12 +218,14 @@ values (1,
 - Màn hình: 14.0 inch LED backlit HD (1366x768) 60Hz Glare Panel with 45% NTSC
 - Khối lượng: 1.78kg',
 0,
-N'images\products\Asus_X441NA.jpg',
+'images\\products\\Asus_X441NA.jpg',
 0,
-0);
+100,
+100,
+100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (2,
 1,
 'Máy xách tay/ Laptop Asus X540UP-GO106D (I3-7100U) (Đen)',
@@ -233,12 +238,14 @@ values (2,
 - Trọng lượng: ~ 2kg
 - Hệ điề hành: Free DOS',
 0,
-N'images\products\asus-vivobook-x540up-go106d-11.jpg',
+'images\\products\\asus-vivobook-x540up-go106d-11.jpg',
 0,
-0);
+100,
+100,
+100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (3,
 1,
 'Máy xách tay/ Laptop Asus FX503VD-E4119T (I7-7700HQ) (Đen)',
@@ -251,12 +258,13 @@ values (3,
 - Trọng lượng: ~ 2.3kg
 - Hệ điều hành: Windows 10 Home - 64 bit',
 0,
-N'images\products\Asus-fx503vd-7.jpg',
+'images\\products\\Asus-fx503vd-7.jpg',
 0,
-0);
+100,
+100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (4,
 1,
 'Máy xách tay/ Laptop Asus X541UA-GO1384 (I5-7200U) (Đen)',
@@ -269,12 +277,12 @@ values (4,
 - Trọng lượng: ~ 2kg
 - Hệ điều hành: Free DOS',
 0,
-N'images\products\asus-x541ua-go1384.jpg',
+'images\\products\\asus-x541ua-go1384.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (5,
 1,
 'Máy xách tay/ Laptop Asus S510UQ-BQ475T (I5-8250U) (Vàng đồng)',
@@ -288,12 +296,12 @@ values (5,
 - Khối lượng: 1.6 kg
 - Hệ điều hành: Windows 10 Home SL 64bits',
 0,
-N'images\products\laptop_asus-s510uq-bq475t-15.6_i5-8250u_4gb_hdd-1tb-trang-4.jpg',
+'images\\products\\laptop_asus-s510uq-bq475t-15.6_i5-8250u_4gb_hdd-1tb-trang-4.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (6,
 1,
 'Máy xách tay/ Laptop Asus X541UV-GO607 (I5-7200U) (Đen)',
@@ -306,12 +314,12 @@ values (6,
 - Trọng lượng: ~ 2kg
 - Hệ điều hành: Free DOS',
 0,
-N'images\products\laptop-asus-x541uv-go607-15.6-i5-7200u-4gb-ddr4-hdd-1tb-den-2.jpg',
+'images\\products\\laptop-asus-x541uv-go607-15.6-i5-7200u-4gb-ddr4-hdd-1tb-den-2.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (7,
 2,
 'Máy xách tay/ Laptop Dell Inspiron 14 7460-N4I5259W (Đồng)',
@@ -324,12 +332,12 @@ values (7,
 - Trọng lượng: 1,6kg
 - Hệ điều hành: Win 10',
 0,
-N'images\products\dell-inspiron14-7460-14i5259w.jpg',
+'images\\products\\dell-inspiron14-7460-14i5259w.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (8,
 2,
 'Máy xách tay/ Laptop Dell Vostro 3468 (F3468-70088614) (Đen)',
@@ -342,12 +350,12 @@ values (8,
 - Trọng lượng: 1.94kg
 - Hệ điều hành: Free DOS',
 0,
-N'images\products\10031690-mtxt-dell-vostro-14-3468-i5-4-1-70088614_1.jpg',
+'images\\products\\10031690-mtxt-dell-vostro-14-3468-i5-4-1-70088614_1.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (9,
 2,
 'Máy xách tay/ Laptop Dell Vostro 3568-VTI35037 (Đen)',
@@ -360,12 +368,12 @@ values (9,
 - Trọng lượng: 2.1kg
 - Hệ điều hành: Free DOS',
 0,
-N'images\products\10030511-mtxt-dell-vostro-15-3568-vti35037-_en.jpg',
+'images\\products\\10030511-mtxt-dell-vostro-15-3568-vti35037-_en.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (10,
 2,
 'Máy xách tay/ Laptop Dell Vostro 5568-077M52 (I5-7200U) (Vàng)',
@@ -378,12 +386,12 @@ values (10,
 - Trọng lượng: 1,98kg
 - Hệ điều hành: Win 10 Home 64',
 0,
-N'images\products\dell-vostro-5568-077m52.jpg',
+'images\\products\\dell-vostro-5568-077m52.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (11,
 2,
 'Máy xách tay/ Laptop Dell Inspiron 14 3467-C4I51107 (Đen)',
@@ -399,12 +407,12 @@ values (11,
 - Khối lượng: 1.81 Kg, pin 4 cell
 - Hệ điều hành: Ko hệ điều hành (Không hỗ trợ Windows 7/8)',
 0,
-N'images\products\laptop-dell_inspiron-3467-c4i51107-14-i5-7200u-4gb-ddr4-hdd-1tb-xam-2.jpg',
+'images\\products\\laptop-dell_inspiron-3467-c4i51107-14-i5-7200u-4gb-ddr4-hdd-1tb-xam-2.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (12,
 2,
 'Máy xách tay/ Laptop Dell Vostro 5468-VTI5019W (Vàng đồng)',
@@ -417,14 +425,14 @@ values (12,
 - Trọng lượng: 1.7kg
 - Hệ điều hành: Win 10 Home',
 0,
-N'images\products\laptop-dell-vostro-5468-vti5019w-14-i5-7200u-4gb-ddr4-hdd-500gb-vang-2.jpg',
+'images\\products\\laptop-dell-vostro-5468-vti5019w-14-i5-7200u-4gb-ddr4-hdd-500gb-vang-2.jpg',
 0,
-0);
+100,100,100);
 
 
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (13,
 2,
 'Máy xách tay/ Laptop Dell Inspiron 14 3467-M20NR2 (Đen)',
@@ -439,12 +447,12 @@ values (13,
 ○ OTHER: 1.81 kg
 ○ WARRANTY: 12 tháng',
 0,
-N'images\products\laptop-dell-inspiron-14-3467-m20nr2.jpg',
+'images\\products\\laptop-dell-inspiron-14-3467-m20nr2.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (14,
 2,
 'LAPTOP DELL INSPIRON 14 5468 (K5CDP1)',
@@ -457,12 +465,12 @@ values (14,
 - Trọng lượng: 2.06kg
 - Hệ điều hành: Win 10 Home',
 0,
-N'images\products\dell-inspiron14-5468-k5cdp1.jpg',
+'images\\products\\dell-inspiron14-5468-k5cdp1.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (15,
 2,
 'Máy xách tay/ Laptop Dell Vostro 3468 (F3468-70090697) (Đen)',
@@ -475,12 +483,12 @@ values (15,
 - Trọng lượng: 1.96kg
 - Hệ điều hành: Win 10 Home',
 0,
-N'images\products\dell-vostr-3468-f3468-70090697.jpg',
+'images\\products\\dell-vostr-3468-f3468-70090697.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (16,
 2,
 'LAPTOP DELL INSPIRON 14 5468 (70119161)',
@@ -490,12 +498,12 @@ RAM 8GB/HDD 1TB
 Đồ họa AMD Radeon 2GB
 Màn hình 14'' HD',
 0,
-N'images\products\dell-inspiron145468-f5468-70119161.jpg',
+'images\\products\\dell-inspiron145468-f5468-70119161.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (17,
 3,
 'Máy xách tay/ Laptop Acer F5-573-36LH (NX.GFKSV.003) (Bạc)',
@@ -507,12 +515,12 @@ values (17,
 - Trọng lượng: 2.4 kg
 - Hệ điều hành có sẵn:Dos',
 0,
-N'images\products\acer-f5-573-36LH.jpg',
+'images\\products\\acer-f5-573-36LH.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (18,
 3,
 'Máy xách tay/ Laptop Acer AS VX5-591G-70XM (NH.GM2SV.001) (Đen)',
@@ -524,12 +532,12 @@ values (18,
 - Trọng lượng: 2.6 kg
 - Hệ điều hành có sẵn:Dos',
 0,
-N'images\products\acer-as-vx5-591g-70xm.jpg',
+'images\\products\\acer-as-vx5-591g-70xm.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (19,
 3,
 'Máy xách tay/ Laptop Acer Swift 5 SF514-51-51PT (NX.GNHSV.001) I5-7200U (Trắng)',
@@ -540,12 +548,12 @@ values (19,
 - Display 14.0" FHD IPS
 - BT4/ Pin 3Cell/ Vỏ ALU/ Màu TRẮNG/ OS Windows 10SL',
 0,
-N'images\products\acer-swift-5-sf514-51-51pt.jpg',
+'images\\products\\acer-swift-5-sf514-51-51pt.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (20,
 3,
 'Máy xách tay/ Laptop Acer Swift 5 SF514-51-56F3 (NX.GLDSV.004) I5-7200U (Đen)',
@@ -557,12 +565,12 @@ values (20,
 - Trọng lượng: 1.35kg
 - Hệ điều hành có sẵn:Dos',
 0,
-N'images\products\acer-swift-5-sf514-5-56f3.jpg',
+'images\\products\\acer-swift-5-sf514-5-56f3.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (21,
 3,
 'Máy xách tay/ Laptop Acer SA5-271P-53CQ (NT.LB9SV.003) I5-6200U (Bạc)',
@@ -574,12 +582,12 @@ values (21,
 - Trọng lượng: 1.25kg
 - Hệ điều hành có sẵn: Window 10 Pro',
 0,
-N'images\products\acer-switch-alpha-12-sa5-271p-53cq2.jpg',
+'images\\products\\acer-switch-alpha-12-sa5-271p-53cq2.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (22,
 3,
 'Máy xách tay/ Laptop Acer G3-572-70J1 (NH.Q2CSV.003) (Đen)',
@@ -591,13 +599,13 @@ values (22,
 - Trọng lượng: 2.5kg
 - Hệ điều hành có sẵn: Free DOS',
 0,
-N'images\products\acer-g3-572-70j1.jpg',
+'images\\products\\acer-g3-572-70j1.jpg',
 0,
-0);
+100,100,100);
 
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (23,
 3,
 'Máy xách tay/ Laptop Acer AS VX5-591G-52YZ (NH.GM2SV.002) (Đen)',
@@ -609,13 +617,13 @@ values (23,
 - Trọng lượng: 2.5Kg
 - Hệ điều hành có sẵn: Free DOS',
 0,
-N'images\products\acser-as-vx5-591g-52yz.jpg',
+'images\\products\\acser-as-vx5-591g-52yz.jpg',
 0,
-0);
+100,100,100);
 
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (24,
 3,
 'Máy xách tay/ Laptop Acer E5-575G-39QW (NX.GDWSV.005) (Đen)',
@@ -627,13 +635,13 @@ values (24,
 - Trọng lượng: 2.3kg
 - Hệ điều hành có sẵn: Free DOS',
 0,
-N'images\products\laptop-acer-e5-575g-39qw-15.6-i3-7100u-4gb-ddr4-hdd-500gb-den-1.jpg',
+'images\\products\\laptop-acer-e5-575g-39qw-15.6-i3-7100u-4gb-ddr4-hdd-500gb-den-1.jpg',
 0,
-0);
+100,100,100);
 
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (25,
 3,
 'Máy xách tay/ Laptop Acer E5-575G-50TH (NX.GL9SV.003) (Xám)',
@@ -645,12 +653,12 @@ values (25,
 - Trọng lượng: 2.23 kg
 - Hệ điều hành có sẵn: Free DOS',
 0,
-N'images\products\laptop-acer_e5-575g-50th-15.6-i3-7200u-4gb-ddr4-hdd-1tb-den-1.jpg',
+'images\\products\\laptop-acer_e5-575g-50th-15.6-i3-7200u-4gb-ddr4-hdd-1tb-den-1.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (26,
 3,
 'Máy xách tay/ Laptop Acer E5-475-31KC (NX.GCUSV.001) (Xám)',
@@ -662,12 +670,12 @@ values (26,
 - Trọng lượng: 2.1kg
 - Hệ điều hành có sẵn: Free DOS',
 0,
-N'images\products\acer-e5-475-31kc.jpg',
+'images\\products\\acer-e5-475-31kc.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (27,
 4,
 'Máy xách tay/ Laptop HP Probook 450 G4-Z6T23PA (Bạc)',
@@ -682,12 +690,12 @@ values (27,
 - Trọng lượng:  2.04Kg
 - Kết nối: 2x USB 2.0, USB 3.0, USB-C, D-Sub, HDMI, BT 4.2, 4Cell, Finger print.',
 0,
-N'images\products\hp-probook-450-g4-z6t23pa.jpg',
+'images\\products\\hp-probook-450-g4-z6t23pa.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (28,
 4,
 'Máy xách tay/ Laptop HP Pavilion 15-au112TU (Y4G17PA) (Vàng)',
@@ -699,12 +707,12 @@ values (28,
 - HĐH: Win10SL
 - Màu sắc/ Chất liệu: Gold',
 0,
-N'images\products\laptop-hp-pavilion-15-au112tu-y4g17pa-mau-vang-1.jpg',
+'images\\products\\laptop-hp-pavilion-15-au112tu-y4g17pa-mau-vang-1.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (29,
 4,
 'Máy xách tay/ Laptop HP Probook 430 G4-1RR41PA (Bạc)',
@@ -716,12 +724,12 @@ values (29,
 - Trọng lượng: 1.5 Kg
 - Hệ điều hành có sẵn: Free Dos',
 0,
-N'images\products\hp_probook_430_g4_1.jpg',
+'images\\products\\hp_probook_430_g4_1.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (30,
 4,
 'Máy xách tay/ Laptop HP Spectre x360-ac028TU (1HP09PA) (Đen)',
@@ -733,12 +741,12 @@ values (30,
 - Trọng lượng: 1.32 Kg
 - Hệ điều hành có sẵn: Window 10 Home',
 0,
-N'images\products\laptop-hp-spectre-x360-ac028tu-1hp09pa-3.jpg',
+'images\\products\\laptop-hp-spectre-x360-ac028tu-1hp09pa-3.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (31,
 4,
 'Máy xách tay/ Laptop HP 15-bs553TU (2GE36PA) (Đen)',
@@ -750,13 +758,13 @@ values (31,
 - Trọng lượng: 1.9 Kg
 - Hệ điều hành có sẵn: Free Dos',
 0,
-N'images\products\hp-15-bs553tu-03.jpg',
+'images\\products\\hp-15-bs553tu-03.jpg',
 0,
-0);
+100,100,100);
 
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (32,
 4,
 'Máy xách tay/ Laptop HP Pavilion 15-au119TX (Y4G52PA) (Bạc)',
@@ -772,12 +780,12 @@ values (32,
 - OS : Windows 10 Home SL 64bits
 - Bảo hành 12 tháng',
 0,
-N'images\products\hp-pavilion-15-au119tx.jpg',
+'images\\products\\hp-pavilion-15-au119tx.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (33,
 4,
 'Máy xách tay/ Laptop HP Pavilion X360 14-ba062TU (2GV24PA) (Bạc)',
@@ -789,12 +797,12 @@ values (33,
 - Trọng lượng: 1.7 kg
 - Hệ điều hành có sẵn: Win 10',
 0,
-N'images\products\hp-pavilion-x360-14-ba062TU.jpg',
+'images\\products\\hp-pavilion-x360-14-ba062TU.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (34,
 4,
 'Máy xách tay/ Laptop HP Pavilion 15-cc048TX (2GV11PA) (Vàng)',
@@ -806,12 +814,12 @@ values (34,
 - Trọng lượng: 2.16 kg
 - Hệ điều hành có sẵn: Free Dos',
 0,
-N'images\products\hp-pavilion-15-cc048tx.jpg',
+'images\\products\\hp-pavilion-15-cc048tx.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (35,
 4,
 'Máy xách tay/ Laptop HP Pavilion 14-bf015TU (2GE47PA) (Hồng)',
@@ -823,12 +831,12 @@ values (35,
 - Trọng lượng: 1.63 kg
 - Hệ điều hành có sẵn: Free Dos',
 0,
-N'images\products\hp-pavilion-14-bf015tu.jpg',
+'images\\products\\hp-pavilion-14-bf015tu.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (36,
 4,
 'Máy xách tay/ Laptop HP Pavilion 14-bf016TU (2GE48PA) (Bạc)',
@@ -843,12 +851,12 @@ values (36,
 ○ OTHER: 1.62kg, USB 3.1, 1x HDMI
 ○ WARRANTY: 12 Tháng',
 0,
-N'images\products\hp-pavilion-14-bf016tu.jpg',
+'images\\products\\hp-pavilion-14-bf016tu.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (37,
 5,
 'Máy xách tay/ Laptop Lenovo G5070-6676 (Đen)',
@@ -860,12 +868,12 @@ values (37,
 - Trọng lượng: 2.3kg
 - Hệ điều hành có sẵn: Free Dos',
 0,
-N'images\products\lenovo-g5070-5942-3771-black_1.jpg',
+'images\\products\\lenovo-g5070-5942-3771-black_1.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (38,
 5,
 'Máy xách tay/ Laptop Lenovo Yoga 520-14IKB-80X80109VN (I5-7200U) (Xám)',
@@ -879,12 +887,12 @@ values (38,
 - Khối lượng: 1.74 kg
 - Hệ điều hành có sẵn: Windows 10 Home SL 64bit',
 0,
-N'images\products\laptop-lenovo-yoga-520-14ikb.jpg',
+'images\\products\\laptop-lenovo-yoga-520-14ikb.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (39,
 5,
 'Máy xách tay/ Laptop Lenovo Ideapad 320-15IKB 81BG00DYVN (i5-8250U) (Xám)',
@@ -895,12 +903,12 @@ values (39,
 - Display 15.6" FHD
 - HĐH Windows 10',
 0,
-N'images\products\lenovo_ideapad320.jpg',
+'images\\products\\lenovo_ideapad320.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (40,
 5,
 'Máy xách tay/ Laptop Lenovo Yoga 520-14IKB-80X80106VN (I3-7130U) (Xám)',
@@ -910,12 +918,12 @@ values (40,
 - Ổ cứng: HDD: 500 GB
 - Màn hình: 14 inch, HD (1366 x 768)',
 0,
-N'images\products\lenovo-yoga-520-14ikb-i3-7130u-80x80106vn-xam-3-2-org.jpg',
+'images\\products\\lenovo-yoga-520-14ikb-i3-7130u-80x80106vn-xam-3-2-org.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (41,
 5,
 'Máy xách tay/ Laptop Lenovo Yoga 520-14IKBR-81C8006AVN (I5-8250U) (Vàng)',
@@ -926,12 +934,12 @@ values (41,
 - Kiểu dáng nhỏ gọn, dễ dàng mang theo.
 - Màu sắc tinh tế, rất được ưa thích.',
 0,
-N'images\products\lenovo-yoga520-14IKBR-81C800.jpg',
+'images\\products\\lenovo-yoga520-14IKBR-81C800.jpg',
 0,
-0);
+100,100,100);
 
 insert into product(id,catalog_id,name,price,content,discount,image_link,
-created,view) 
+created,view,sell,stock) 
 values (42,
 5,
 'Máy xách tay/ Laptop Lenovo Ideapad 320-15IKB 81BG00E1VN (i7-8550U) (Xám)',
@@ -944,9 +952,9 @@ values (42,
 - Kết nối: USB 3.0, USB-C, HDMI, BT 4.1
 - Hệ điều hành có sẵn: Windows 10 Home SL 64bit',
 0,
-N'images\products\lenovo-ideapad320-15IKB81BG.jpg',
+'images\\products\\lenovo-ideapad320-15IKB81BG.jpg',
 0,
-0);
+100,100,100);
 
 
 
