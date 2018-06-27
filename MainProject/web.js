@@ -43,8 +43,6 @@ app.get('/login',(req,res)=>{
 	res.render('login/login');
 })
 
-
-
 app.get('/product_summary',(req,res)=>{
 	res.render('product/product_summary');
 })
@@ -53,59 +51,35 @@ app.get('/product_summary',(req,res)=>{
 
 
 app.get('/compair',(req,res)=>{
-	var vm={
-		layout:false
-	}
-	res.render('compair/compair',vm);
+	res.render('compair/compair');
 })
 
 app.get('/contact',(req,res)=>{
-	var vm={
-		layout:false
-	}
-	res.render('contact/contact',vm);
+	res.render('contact/contact');
 })
 
 app.get('/faq',(req,res)=>{
-	var vm={
-		layout:false
-	}
-	res.render('faq/faq',vm);
+	res.render('faq/faq');
 })
 
 app.get('/forgetpass',(req,res)=>{
-	var vm={
-		layout:false
-	}
-	res.render('forgetpass/forgetpass',vm);
+	res.render('forgetpass/forgetpass');
 })
 
 app.get('/legal_notice',(req,res)=>{
-	var vm={
-		layout:false
-	}
-	res.render('legal_notice/legal_notice',vm);
+	res.render('legal_notice/legal_notice');
 })
 
 app.get('/normal',(req,res)=>{
-	var vm={
-		layout:false
-	}
-	res.render('delivery/normal',vm);
+	res.render('delivery/normal');
 })
 
 app.get('/special_offer',(req,res)=>{
-	var vm={
-		layout:false
-	}
-	res.render('special_offer/special_offer',vm);
+	res.render('special_offer/special_offer');
 })
 
 app.get('/tac',(req,res)=>{
-	var vm={
-		layout:false
-	}
-	res.render('tac/tac',vm);
+	res.render('tac/tac');
 })
 
 app.listen(3000, () => {

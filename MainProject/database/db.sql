@@ -170,10 +170,13 @@ DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `id` int(255) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `gender` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `birthday` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `phone` varchar(15) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `address` varchar(128) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `password` varchar(40) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `addition` varchar(40) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `created` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
