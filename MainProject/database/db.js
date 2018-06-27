@@ -4,12 +4,11 @@ exports.load = sql => {
     return new Promise((resolve, reject) => {
         var cn = mysql.createConnection({
             host: 'localhost',
-            port: 3305,
+            port: 3306,
             user: 'root',
             password: '',
             database: 'navistore'
         });
-
         cn.connect(err => {
             if (err) throw err;
             console.log('connected to db');
@@ -32,7 +31,7 @@ exports.save = sql=>{
     return new Promise((resolve, reject)=>{
         var con = mysql.createConnection({
             host: 'localhost',
-            port: 3305,
+            port: 3306,
             user: 'root',
             password: '',
             database: 'navistore'

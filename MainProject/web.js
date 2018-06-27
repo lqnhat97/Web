@@ -44,12 +44,8 @@ app.get('/product_summary',(req,res)=>{
 })
 
 
-
 app.get('/register',(req,res)=>{
-	var vm={
-		layout:false
-	}
-	res.render('register/register',vm);
+	res.render('register/register');
 })
 
 app.get('/compair',(req,res)=>{
