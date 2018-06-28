@@ -68,7 +68,7 @@ app.use('/',web_homeController);
 
 //product
 app.use('/products',web_productsController)
-app.use('/products/price',web_productsController)
+// app.use('/products/price',web_productsController)
 
 //product_detail
 app.use('/product_details',web_prodetailController)
