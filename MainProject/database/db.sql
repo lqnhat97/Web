@@ -175,7 +175,7 @@ CREATE TABLE `user` (
   `email` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `phone` varchar(15) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `address` varchar(128) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `password` varchar(40) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `password` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `addition` varchar(40) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `created` int(11) NOT NULL,
   PRIMARY KEY (`id`)
