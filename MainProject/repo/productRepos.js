@@ -71,3 +71,16 @@ exports.productDetail=(id)=>{
 	var sql=`select * from product where id = "${id}" `;
 	return db.save(sql);
 }
+
+//Hien thi san pham  theo khung gia duoi 15000000
+exports.loadProductUnder15=(id)=>{
+	var sql = `select * from product where price <= 15000000.0000 and catalog_id="${id}"`;
+	return db.load(sql);
+}
+
+//Hien thi san pham  theo khung gia tren 15000000
+exports.loadProductOver15=(id)=>{
+	var sql = `select * from product where price > 15000000.0000 and catalog_id="${id}"`;
+	return db.load(sql);
+}
+

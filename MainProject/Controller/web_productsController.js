@@ -10,11 +10,9 @@ router.get('/', (req, res) => {
     productRepos.allbrandProduct(req.query.catId).then(rows => {
         var vm = {
             categories:rows,
-            layout:false
         };
         //console.log(rows);
         res.render('product/products', vm);
-
     })
 })
 	

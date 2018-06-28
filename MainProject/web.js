@@ -48,8 +48,6 @@ app.get('/product_summary',(req,res)=>{
 })
 
 
-
-
 app.get('/compair',(req,res)=>{
 	res.render('compair/compair');
 })
