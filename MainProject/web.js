@@ -115,12 +115,12 @@ app.get('/special_offer',(req,res)=>{
 app.get('/tac',(req,res)=>{
 	res.render('tac/tac');
 })
-<<<<<<< HEAD
-app.use(handle404MDW);
 app.get('/user_info',(req,res)=>{
+    res.render('user_info/user_info');
 })
 
->>>>>>> a0ab624740e0c8680deecb5bb2892e5a6357a32f
+app.use(handle404MDW);
+
 app.listen(3000, () => {
     console.log('Site running on port 3000');
 });
