@@ -4,7 +4,7 @@ exports.load = sql => {
     return new Promise((resolve, reject) => {
         var cn = mysql.createConnection({
             host: 'localhost',
-            port: 3306,
+            port: 3305,
             user: 'root',
             password: '',
             database: 'navistore'
@@ -20,10 +20,10 @@ exports.load = sql => {
             } else {
                 resolve(rows);
             }
+            cn.end();
 
 
         });
-        cn.end();
     })
 }
 
@@ -42,8 +42,9 @@ exports.save = sql=>{
         con.query(sql,(err,value)=>{
             if(err) reject(err);
             resolve(value);
-        })
+            con.end();
 
-        con.end();
+        });
+
     });
 }

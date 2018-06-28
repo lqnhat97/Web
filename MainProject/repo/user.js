@@ -7,5 +7,10 @@ exports.register=(c)=>{
 
 exports.loadUsers=()=>{
 	var sql=`select * from user`;
-	return db.save(sql);
+	return db.load(sql);
+}
+
+exports.login = user => {
+    var sql = `select * from user where email = "${user.username}" and password = "${user.password}"`;
+    return db.load(sql);
 }

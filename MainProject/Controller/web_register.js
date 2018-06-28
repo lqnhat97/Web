@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var user = require('../repo/user');
+var SHA256 = require('crypto-js/sha256');
 
 router.get('/',(req,res)=>{
 	res.render('register/register');
@@ -12,7 +13,7 @@ router.post('/',(req,res)=>{
 		mail:req.body.email,
 		phone:req.body.phone,
 		address: req.body.city,
-		pass:req.body.password,
+		pass:SHA256(req.body.rawPWD).toString(),
 		gender:req.body.gender,
 		addtion:req.body.addition,
 		birthday:req.body.birthday

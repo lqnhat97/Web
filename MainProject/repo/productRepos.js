@@ -3,9 +3,7 @@ var config=require('../config/config')
 
 exports.loadAll = () => {
     var sql = 'select * from product';
-    return db.load(sql).then(rows=>{
-    	console.log(rows);
-	});
+    return db.load(sql);
 }
 
 exports.addProduct= c=>{

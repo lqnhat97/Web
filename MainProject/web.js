@@ -4,6 +4,15 @@ var express_hbs_sections=require('express-handlebars-sections');
 var body_parser = require('body-parser');
 var passport=require('passport');
 var session=require('express-session');
+var path = require('path');
+var wnumb = require('wnumb');
+
+var session = require('express-session');
+var MySQLStore = require('express-mysql-session')(session);
+
+
+var handleLayoutMDW = require('./middle-wares/handleLayout'),
+    handle404MDW = require('./middle-wares/handle404');
 
 var web_homeController=require('./Controller/web_homeController');
 var web_productsController = require('./Controller/web_productsController')
@@ -28,10 +37,32 @@ app.use(body_parser.json());
 app.use(body_parser.urlencoded({
     extended: false
 }));
-app.use(session({secret:"mysecret"}))
-app.use(passport.initialize());
-app.use(passport.session());
+var sessionStore = new MySQLStore({
+    host: 'localhost',
+    port: 3305,
+    user: 'root',
+    password: '',
+    database: 'navistore',
+    createDatabaseTable: true,
+    schema: {
+        tableName: 'sessions',
+        columnNames: {
+            session_id: 'session_id',
+            expires: 'expires',
+            data: 'data'
+        }
+    }
+});
 
+app.use(session({
+    key: 'session_cookie_name',
+    secret: 'session_cookie_secret',
+    store: sessionStore,
+    resave: false,
+    saveUninitialized: false
+}));
+
+app.use(handleLayoutMDW);
 //home
 app.use('/',web_homeController);
 
@@ -83,7 +114,7 @@ app.get('/special_offer',(req,res)=>{
 app.get('/tac',(req,res)=>{
 	res.render('tac/tac');
 })
-
+app.use(handle404MDW);
 app.listen(3000, () => {
     console.log('Site running on port 3000');
 });

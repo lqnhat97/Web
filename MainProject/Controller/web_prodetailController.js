@@ -7,6 +7,7 @@ router.get('/',(req,res)=>{
 		var vm={
 			category:rows
 		}
+		console.log(rows)
 	res.render('product/product_details',vm);
 
 	});
