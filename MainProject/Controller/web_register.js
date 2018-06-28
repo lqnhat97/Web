@@ -11,21 +11,24 @@ router.post('/',(req,res)=>{
 		name: req.body.name,
 		mail:req.body.email,
 		phone:req.body.phone,
-		address:req.body.address + "," + req.body.city,
+		address: req.body.city,
 		pass:req.body.password,
+		gender:req.body.gender,
+		addtion:req.body.addition,
+		birthday:req.body.birthday
 	}
 	user.register(vm).then(rows=>{
 		var ok = {
             add_ok: true,
         }
         console.log(rows);
-        res.redirect('home/web_home',ok);
+        res.render('register/register',ok);
     }).catch(err=>{
         var f = {
             add_ok: false
         }
         console.log(err);
-        res.render('home/web_home',f);
+        res.render('register/register',f);
 	});
 })
 

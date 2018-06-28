@@ -21,6 +21,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <script src='https://www.google.com/recaptcha/api.js?hl=vi'></script>
     <style type="text/css" id="enject"></style>
 </head>
 
@@ -71,20 +72,21 @@
                                     <h3>Đăng nhập</h3>
                                 </div>
                                 <div class="modal-body">
-                                    <form class="form-horizontal loginFrm">
+                                    <form class="form-horizontal loginFrm" action="/login" method="POST">
                                         <div class="control-group">
-                                            <input type="text" id="inputEmail" placeholder="Tài khoản">
+                                            <input type="text" id="inputEmail" placeholder="Tài khoản" name="username">
                                         </div>
                                         <div class="control-group">
-                                            <input type="password" id="inputPassword" placeholder="Mật khẩu">
+                                            <input type="password" id="inputPassword" placeholder="Mật khẩu" name="password">
                                         </div>
                                         <div class="control-group">
                                             <label class="checkbox">
                                                 <input type="checkbox">Ghi nhớ mật khẩu.
                                             </label>
                                         </div>
+                                        <button type="submit" class="btn btn-success">Đăng nhập</button>
+
                                     </form>
-                                    <button type="submit" class="btn btn-success">Đăng nhập</button>
                                     <button class="btn" data-dismiss="modal" aria-hidden="true">Đóng</button>
                                 </div>
                             </div>
