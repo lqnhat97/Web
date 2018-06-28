@@ -2,7 +2,6 @@ var express = require('express');
 var express_hbs=require('express-handlebars');
 var express_hbs_sections=require('express-handlebars-sections');
 var body_parser = require('body-parser');
-var passport=require('passport');
 var session=require('express-session');
 var path = require('path');
 var wnumb = require('wnumb');
@@ -13,6 +12,8 @@ var MySQLStore = require('express-mysql-session')(session);
 
 var handleLayoutMDW = require('./middle-wares/handleLayout'),
     handle404MDW = require('./middle-wares/handle404');
+    restrict = require('./middle-wares/restrict');
+
 
 var web_homeController=require('./Controller/web_homeController');
 var web_productsController = require('./Controller/web_productsController')
@@ -27,7 +28,13 @@ app.engine('hbs', express_hbs({
 	defaultLayout:'web',
 	layoutsDir:'views/layout/',
 	helpers:{
-		section: express_hbs_sections()
+		section: express_hbs_sections(),
+        number_format: n => {
+            var nf = wnumb({
+                thousand: ','
+            });
+            return nf.to(n);
+        }
 	}
 }))
 app.set('view engine','hbs');

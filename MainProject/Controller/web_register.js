@@ -13,7 +13,7 @@ router.post('/',(req,res)=>{
 		mail:req.body.email,
 		phone:req.body.phone,
 		address: req.body.city,
-		pass:SHA256(req.body.rawPWD).toString(),
+		pass:SHA256(req.body.passwpord).toString(),
 		gender:req.body.gender,
 		addtion:req.body.addition,
 		birthday:req.body.birthday

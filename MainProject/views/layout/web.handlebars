@@ -28,8 +28,9 @@
 <body>
     <div id="header">
         <div class="container">
+            {{#if layoutVM.isLogged}}
             <div id="welcomeLine" class="row">
-                <div class="span6">Chào mừng!<strong> Khách hàng</strong></div>
+                <div class="span6">Chào mừng!<strong> {{layoutVM.curUser.name}}</strong></div>
                 <div class="span6">
                     <div class="pull-right">
                         <a href="/product_summary"><span class="">Tổng tiền:</span></a>
@@ -39,12 +40,23 @@
                     </div>
                 </div>
             </div>
+            {{else}}
+            <div id="welcomeLine" class="row">
+                <div class="span6">Xin chào<strong> Khách hàng</strong></div>
+                <div class="span6">
+                    <div class="pull-right">
+                        <a href="#"><span class="">Bạn chưa đăng nhập !</span></a>
+                        <a href="/register" id="cost">Đăng ký ngay ! </a>
+                    </div>
+                </div>
+            </div>
+            {{/if}}
             <!-- Navbar ================================================== -->
             <div id="logoArea" class="navbar">
                 <a id="smallScreen" data-target="#topMenu" data-toggle="collapse" class="btn btn-navbar">
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
 </a>
                 <div class="navbar-inner">
                     <a class="brand" href="/"><img src="/images/logo.png" alt="NaViLap"/></a>
@@ -151,13 +163,12 @@
                                 <li><a href="/products/price?catId=3&price1=10000000&price2=0"><i class="icon-chevron-right"></i>Dưới 10 triệu</a></li>
                                 <li><a href="/products/price?catId=3&price1=20000000&price2=10000000"><i class="icon-chevron-right"></i>Từ 10 - 20 triệu </a></li>
                                 <li><a href="/products/price?catId=3&price1=999999999&price2=20000000"><i class="icon-chevron-right"></i>Trên 20 triệu</a></li>
-
                             </ul>
                         </li>
                         <li class="subMenu"><a>HP</a>
                             <ul style="display:none">
                                 <li><a href="/products?catId=4"><i class="icon-chevron-right"></i>Tất cả</a></li>
-                                 <li><a href="/products/price?catId=4&price1=10000000&price2=0"><i class="icon-chevron-right"></i>Dưới 10 triệu</a></li>
+                                <li><a href="/products/price?catId=4&price1=10000000&price2=0"><i class="icon-chevron-right"></i>Dưới 10 triệu</a></li>
                                 <li><a href="/products/price?catId=4&price1=20000000&price2=10000000"><i class="icon-chevron-right"></i>Từ 10 - 20 triệu </a></li>
                                 <li><a href="/products/price?catId=4&price1=999999999&price2=20000000"><i class="icon-chevron-right"></i>Trên 20 triệu</a></li>
                             </ul>
@@ -165,7 +176,7 @@
                         <li class="subMenu"><a>LENOVO</a>
                             <ul style="display:none">
                                 <li><a href="/products?catId=5"><i class="icon-chevron-right"></i>Tất cả</a></li>
-                                  <li><a href="/products/price?catId=5&price1=10000000&price2=0"><i class="icon-chevron-right"></i>Dưới 10 triệu</a></li>
+                                <li><a href="/products/price?catId=5&price1=10000000&price2=0"><i class="icon-chevron-right"></i>Dưới 10 triệu</a></li>
                                 <li><a href="/products/price?catId=5&price1=20000000&price2=10000000"><i class="icon-chevron-right"></i>Từ 10 - 20 triệu </a></li>
                                 <li><a href="/products/price?catId=5&price1=999999999&price2=20000000"><i class="icon-chevron-right"></i>Trên 20 triệu</a></li>
                             </ul>
@@ -173,7 +184,7 @@
                         <li class="subMenu"><a>OTHER</a>
                             <ul style="display:none">
                                 <li><a href="/products?catId=6"><i class="icon-chevron-right"></i>Tất cả</a></li>
-                                  <li><a href="/products/price?catId=6&price1=10000000&price2=0"><i class="icon-chevron-right"></i>Dưới 10 triệu</a></li>
+                                <li><a href="/products/price?catId=6&price1=10000000&price2=0"><i class="icon-chevron-right"></i>Dưới 10 triệu</a></li>
                                 <li><a href="/products/price?catId=6&price1=20000000&price2=10000000"><i class="icon-chevron-right"></i>Từ 10 - 20 triệu </a></li>
                                 <li><a href="/products/price?catId=6&price1=999999999&price2=20000000"><i class="icon-chevron-right"></i>Trên 20 triệu</a></li>
                             </ul>
@@ -204,9 +215,7 @@
                     </div>
                 </div>
                 <!-- Sidebar end=============================================== -->
-                {{{_sections.title}}}
-
-                {{{body}}}
+                {{{_sections.title}}} {{{body}}}
             </div>
         </div>
     </div>
