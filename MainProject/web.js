@@ -2,11 +2,14 @@ var express = require('express');
 var express_hbs=require('express-handlebars');
 var express_hbs_sections=require('express-handlebars-sections');
 var body_parser = require('body-parser');
+var passport=require('passport');
+var session=require('express-session');
 
 var web_homeController=require('./Controller/web_homeController');
 var web_productsController = require('./Controller/web_productsController')
 var web_prodetailController=require('./Controller/web_prodetailController')
 var web_register=require('./Controller/web_register');
+var web_login=require('./Controller/web_login');
 var path=require('path');
 
 var app=express();
@@ -25,6 +28,10 @@ app.use(body_parser.json());
 app.use(body_parser.urlencoded({
     extended: false
 }));
+app.use(session({secret:"mysecret"}))
+app.use(passport.initialize());
+app.use(passport.session());
+
 //home
 app.use('/',web_homeController);
 
@@ -34,14 +41,11 @@ app.use('/products',web_productsController)
 //product_detail
 app.use('/product_details',web_prodetailController)
 
-
 //register
 app.use('/register', web_register)
 
+app.use('/login',web_login)
 
-app.get('/login',(req,res)=>{
-	res.render('login/login');
-})
 
 app.get('/product_summary',(req,res)=>{
 	res.render('product/product_summary');
