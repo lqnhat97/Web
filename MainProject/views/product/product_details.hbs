@@ -8,6 +8,7 @@
     </ul>
     {{#each category}}
     <div class="row">
+    {{#each category}}
         <div id="gallery" class="span3">
             <a href="#" title="{{name}}">
 				<img src="{{image_link}}" style="width:100%" alt="{{name}}"/>
@@ -15,14 +16,14 @@
             <div id="differentview" class="moreOptopm carousel slide">
                 <div class="carousel-inner">
                     <div class="item active">
-                        <a href="images/products/Asus_X441NA.jpg"> <img style="width:29%" src="images/products/Asus_X441NA.jpg" alt=""/></a>
-                        <a href="images/products/Asus_X441NA.jpg"> <img style="width:29%" src="images/products/Asus_X441NA.jpg" alt=""/></a>
-                        <a href="images/products/Asus_X441NA.jpg"> <img style="width:29%" src="images/products/Asus_X441NA.jpg" alt=""/></a>
+                        <a href="{{image_link}}"> <img style="width:29%" src="{{image_link}}" alt=""/></a>
+                        <a href="{{image_link}}"> <img style="width:29%" src="{{image_link}}" alt=""/></a>
+                        <a href="{{image_link}}"> <img style="width:29%" src="{{image_link}}" alt=""/></a>
                     </div>
                     <div class="item">
-                        <a href="images/products/Asus_X441NA.jpg"> <img style="width:29%" src="images/products/Asus_X441NA.jpg" alt=""/></a>
-                        <a href="images/products/Asus_X441NA.jpg"> <img style="width:29%" src="images/products/Asus_X441NA.jpg" alt=""/></a>
-                        <a href="images/products/Asus_X441NA.jpg"> <img style="width:29%" src="images/products/Asus_X441NA.jpg" alt=""/></a>
+                        <a href="{{image_link}}"> <img style="width:29%" src="{{image_link}}" alt=""/></a>
+                        <a href="{{image_link}}"> <img style="width:29%" src="{{image_link}}" alt=""/></a>
+                        <a href="{{image_link}}"> <img style="width:29%" src="{{image_link}}" alt=""/></a>
                     </div>
                 </div>
                  
@@ -42,6 +43,7 @@
                 </div>
             </div>
         </div>
+        {{/each}}
         <div class="span6">
         {{#each category}}
             <h3>{{name}}</h3>
@@ -57,25 +59,11 @@
             </form>
             <hr class="soft" />
             <h4>Còn hàng</h4>
-            <small>Số lượt xem: {{view}} <br/> Số lượt bán: 400</small>
-            <form class="form-horizontal qtyFrm pull-right">
-                <div class="control-group">
-                    <label class="control-label"><span>Màu sắc</span></label>
-                    <div class="controls">
-                        <select class="span2">
-                            <option>Vàng</option>
-                        </select>
-                    </div>
-                </div>
-            </form>
+            <small>Số lượt xem: {{view}} <br/> Số lượt bán: {{sell}}</small>
             <hr class="soft clr" />
+            <h4>Chi tiết</h4>
             <p>
-                - CPU: Intel® Celeron® Processor N3350 (1.10GHz, 2M Cache, up to 2.4 GHz)
-                <br> - Ram: 4GB DDR3L Bus 1600 Mhz
-                <br> - Ổ cứng: HDD500GB 5400rpm Hard Drive Sata
-                <br> - Card màn hình: Integrated Intel® HD Graphics
-                <br> - Màn hình: 14.0 inch LED backlit HD (1366x768) 60Hz Glare Panel with 45% NTSC
-                <br> - Khối lượng: 1.78kg
+                {{{content}}}
             </p>
             <a class="btn btn-small pull-right" href="#detail">Thêm chi tiết</a>
             <br class="clr" />

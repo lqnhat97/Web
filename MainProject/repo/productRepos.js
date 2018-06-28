@@ -61,7 +61,7 @@ exports.loadMostView3 = ()=>{
 //danh sach theo loai
 exports.allbrandProduct=(catId)=>{
 	var sql=`select * from product where catalog_id = "${catId}" `;
-	return db.save(sql);
+	return db.load(sql);
 }
 
 //Hien thong tin san pham
@@ -70,15 +70,21 @@ exports.productDetail=(id)=>{
 	return db.save(sql);
 }
 
-//Hien thi san pham  theo khung gia duoi 15000000
-exports.loadProductUnder15=(id)=>{
-	var sql = `select * from product where price <= 15000000.0000 and catalog_id="${id}"`;
+//Hien thi san pham  theo khung gia duoi 10000000
+exports.loadProductBasePrice=(catId,price1,price2)=>{
+	var sql = `select * from product where price <= "${price1}" and price > "${price2}" and catalog_id="${catId}"`;
 	return db.load(sql);
 }
 
-//Hien thi san pham  theo khung gia tren 15000000
-exports.loadProductOver15=(id)=>{
-	var sql = `select * from product where price > 15000000.0000 and catalog_id="${id}"`;
+/*//Hien thi san pham  theo khung gia duoi 10000000
+exports.loadProductBetween1015=(id)=>{
+	var sql = `select * from product where price > 10000000.0000 and price <=20000000 and catalog_id="${id}"`;
 	return db.load(sql);
 }
+
+//Hien thi san pham  theo khung gia tren 20000000
+exports.loadProductOver20=(id)=>{
+	var sql = `select * from product where price > 20000000.0000 and catalog_id="${id}"`;
+	return db.load(sql);
+}*/
 

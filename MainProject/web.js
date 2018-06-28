@@ -68,6 +68,7 @@ app.use('/',web_homeController);
 
 //product
 app.use('/products',web_productsController)
+app.use('/products/price',web_productsController)
 
 //product_detail
 app.use('/product_details',web_prodetailController)
@@ -114,7 +115,12 @@ app.get('/special_offer',(req,res)=>{
 app.get('/tac',(req,res)=>{
 	res.render('tac/tac');
 })
+<<<<<<< HEAD
 app.use(handle404MDW);
+app.get('/user_info',(req,res)=>{
+})
+
+>>>>>>> a0ab624740e0c8680deecb5bb2892e5a6357a32f
 app.listen(3000, () => {
     console.log('Site running on port 3000');
 });
