@@ -85,7 +85,6 @@
                                             </label>
                                         </div>
                                         <button type="submit" class="btn btn-success">Đăng nhập</button>
-
                                     </form>
                                     <button class="btn" data-dismiss="modal" aria-hidden="true">Đóng</button>
                                 </div>
@@ -133,6 +132,9 @@
                         <li class="subMenu open"><a>ASUS</a>
                             <ul style="display: none">
                                 <li><a class="active" href="/products?catId=1"><i class="icon-chevron-right"></i>Tất cả </a></li>
+                                <li><a href="/products/price?catId=1&price1=10000000&price2=0"><i class="icon-chevron-right"></i>Dưới 10 triệu</a></li>
+                                <li><a href="/products/price?catId=1&price1=20000000&price2=10000000"><i class="icon-chevron-right"></i>Từ 10 - 20 triệu </a></li>
+                                <li><a href="/products/price?catId=1&price1=999999999&price2=20000000"><i class="icon-chevron-right"></i>Trên 20 triệu</a></li>
                             </ul>
                         </li>
                         <li class="subMenu"><a> DELL</a>
@@ -179,7 +181,7 @@
                     </div>
                     <br/>
                     <div class="thumbnail">
-                        <img href ="/product_detail" src="images/payment_methods.png" title="Phương thức thanh toán" alt="Payments Methods">
+                        <img href="/product_detail" src="images/payment_methods.png" title="Phương thức thanh toán" alt="Payments Methods">
                         <div class="caption">
                             <h5>Phương thức thanh toán</h5>
                         </div>

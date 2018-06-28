@@ -15,6 +15,16 @@ router.get('/', (req, res) => {
         res.render('product/products', vm);
     })
 })
+
+
+router.get('/price', (req, res) => {
+    productRepos.loadProductBasePrice(req.query.catId,req.query.price1,req.query.price2).then(rows => {
+        var vm = {
+            categories:rows,
+        };
+        res.render('product/products', vm);
+    })
+})
 	
 
 module.exports = router;

@@ -1,0 +1,95 @@
+﻿
+                <!-- Sidebar end=============================================== -->
+                <div class="span9">
+                    <ul class="breadcrumb">
+                        <li><a href="/">Trang chủ</a> <span class="divider">/</span></li>
+                        <li class="active">Thông tin tài khoản</li>
+                    </ul>
+                    <h3> Thông tin tài khoản</h3>
+                    <div class="well">
+                        
+                        <form class="form-horizontal" action="" method="POST" role="form">
+                            <h4>Thông tin cá nhân</h4>
+                            <div class="control-group">
+                                <label class="control-label">Bạn là <sup>*</sup></label>
+                                <div class="controls">
+                                    <input type="text" id="input_gender" placeholder="{{gender}}" name="gender">
+                                </div>
+                            </div>
+                            
+                            <div class="control-group">
+                                <label class="control-label" for="inputLnam">Tên <sup>*</sup></label>
+                                <div class="controls">
+                                    <input type="text" id="inputLnam" placeholder="{{name}}" name="name">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="input_username">Username <sup>*</sup></label>
+                                <div class="controls">
+                                    <input type="text" id="input_email" placeholder="{{email}}" name="email"> 
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="inputPassword1">Mật khẩu <sup>*</sup></label>
+                                <div class="controls">
+                                    <input type="password" id="inputPassword1" placeholder="{{password}}" name="password">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">Năm sinh <sup>*</sup></label>
+                                <div class="controls">
+                                    <select class="span1" name="birthday" placeholder="{{birthday}}">
+                                        <option value="">-</option>
+                                        <option value="2001">2001&nbsp;&nbsp;</option>
+                                        <option value="2000">2000&nbsp;&nbsp;</option>
+                                        <option value="1999">1999&nbsp;&nbsp;</option>
+                                        <option value="1998">1998&nbsp;&nbsp;</option>
+                                        <option value="1997">1997&nbsp;&nbsp;</option>
+                                        <option value="1996">1996&nbsp;&nbsp;</option>
+                                        <option value="1995">1995&nbsp;&nbsp;</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="alert alert-block alert-error fade in">
+                                <button type="button" class="close" data-dismiss="alert">×</button>
+                                <strong>Chú ý: </strong>Vui lòng điền đầy đủ thông tin
+                            </div>
+                            <h4>Thông tin thêm</h4>
+                            <div class="control-group">
+                                <label class="control-label" for="address">Địa chỉ <sup>*</sup></label>
+                                <div class="controls">
+                                    <input type="text" id="address" placeholder="{{address}}" name="address" /> <span>Số nhà, tên đường</span>
+                                </div>
+                            </div>
+                            
+                            <div class="control-group">
+                                <label class="control-label" for="aditionalInfo">Thông tin thêm</label>
+                                <div class="controls">
+                                    <textarea name="addition" id="aditionalInfo" cols="26" rows="3">{{addition}}</textarea>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="mobile">Điện thoại <sup>*</sup> </label>
+                                <div class="controls">
+                                    <input type="text"  id="mobile" placeholder="{{phone}}" name="phone" />
+                                </div>
+                            </div>
+                            <p style="color: red;"><sup>(*)</sup> Không được bỏ trống</p>
+                        </form>
+                        {{#if add_ok}}
+                        <div class="alert alert-success">
+                            <strong>Success!</strong> Thêm sản phẩm thành công.
+                        </div>
+                        {{/if}}
+                        {{#if add_false}}
+                        <div class="alert alert-danger">
+                            <strong>Danger!</strong> Thêm sản phẩm thất bại.
+                        </div>
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MainBody End ============================= -->
+   

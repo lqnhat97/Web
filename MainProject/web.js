@@ -37,6 +37,7 @@ app.use('/',web_homeController);
 
 //product
 app.use('/products',web_productsController)
+app.use('/products/price',web_productsController)
 
 //product_detail
 app.use('/product_details',web_prodetailController)
@@ -82,6 +83,10 @@ app.get('/special_offer',(req,res)=>{
 
 app.get('/tac',(req,res)=>{
 	res.render('tac/tac');
+})
+
+app.get('/user_info',(req,res)=>{
+	res.render('user_info/user_info');
 })
 
 app.listen(3000, () => {
