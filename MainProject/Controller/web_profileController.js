@@ -1,38 +1,43 @@
 var express = require('express');
 var router = express.Router();
-var user = require('../repo/user');
-var SHA256 = require('crypto-js/sha256');
-var restrict = require('../middle-wares/restrict');
+var userRepo = require('../repo/user');
 
 
 router.get('/',(req,res)=>{
-	res.render('register/register');
+
+	userRepo.loadUser(req.session.curUser.id).then(rows=>{
+		var vm={
+			info:rows
+		};
+   		 res.render('user_info/user_info',vm);
+
+	});
 })
 
 router.post('/',(req,res)=>{
 	var vm={
 		name: req.body.name,
-		mail:req.body.email,
 		phone:req.body.phone,
 		address: req.body.city,
-		pass:SHA256(req.body.passwpord).toString(),
 		gender:req.body.gender,
 		addtion:req.body.addition,
 		birthday:req.body.birthday
 	}
-	user.register(vm).then(rows=>{
+	userRepo.updateUser(vm).then(rows=>{
 		var ok = {
             add_ok: true,
         }
         console.log(rows);
-        res.render('register/register',ok);
+        res.render('user_info/user_info',ok);
     }).catch(err=>{
         var f = {
             add_ok: false
         }
         console.log(err);
-        res.render('register/register',f);
+        res.render('user_info/user_info',f);
 	});
 })
+
+
 
 module.exports = router;

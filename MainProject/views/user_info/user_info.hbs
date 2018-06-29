@@ -1,5 +1,6 @@
 ﻿
                 <!-- Sidebar end=============================================== -->
+                {{#if layoutVM.isLogged}}
                 <div class="span9">
                     <ul class="breadcrumb">
                         <li><a href="/">Trang chủ</a> <span class="divider">/</span></li>
@@ -7,11 +8,11 @@
                     </ul>
                     <h3> Thông tin tài khoản</h3>
                     <div class="well">
-                        
+                        {{#each info}}
                         <form class="form-horizontal" action="" method="POST" role="form">
                             <h4>Thông tin cá nhân</h4>
                             <div class="control-group">
-                                <label class="control-label">Bạn là <sup>*</sup></label>
+                                <label class="control-label">Giới tính <sup>*</sup></label>
                                 <div class="controls">
                                     <input type="text" id="input_gender" placeholder="{{gender}}" name="gender">
                                 </div>
@@ -23,18 +24,7 @@
                                     <input type="text" id="inputLnam" placeholder="{{name}}" name="name">
                                 </div>
                             </div>
-                            <div class="control-group">
-                                <label class="control-label" for="input_username">Username <sup>*</sup></label>
-                                <div class="controls">
-                                    <input type="text" id="input_email" placeholder="{{email}}" name="email"> 
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label" for="inputPassword1">Mật khẩu <sup>*</sup></label>
-                                <div class="controls">
-                                    <input type="password" id="inputPassword1" placeholder="{{password}}" name="password">
-                                </div>
-                            </div>
+                            
                             <div class="control-group">
                                 <label class="control-label">Năm sinh <sup>*</sup></label>
                                 <div class="controls">
@@ -74,8 +64,15 @@
                                     <input type="text"  id="mobile" placeholder="{{phone}}" name="phone" />
                                 </div>
                             </div>
-                            <p style="color: red;"><sup>(*)</sup> Không được bỏ trống</p>
+                           
+                            <div class="control-group">
+                                <div class="controls">
+                                    <button type="submit" class="btn btn-primary">Thay đổi thông tin</button>
+                                    
+                                </div>
+                            </div>
                         </form>
+                        {{/each}}
                         {{#if add_ok}}
                         <div class="alert alert-success">
                             <strong>Success!</strong> Thêm sản phẩm thành công.
@@ -91,5 +88,6 @@
             </div>
         </div>
     </div>
+    {{/if}}
     <!-- MainBody End ============================= -->
    

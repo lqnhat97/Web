@@ -1,23 +1,23 @@
 <!-- Sidebar end=============================================== -->
 <div class="span9">
     <ul class="breadcrumb">
-        <li><a href="index.html">Trang chủ</a> <span class="divider">/</span></li>
+        <li><a href="/">Trang chủ</a> <span class="divider">/</span></li>
         <li class="active">Đăng nhập</li>
     </ul>
     <h1> Đăng nhập</h1>
     <hr class="soft" />
-    <form>
+    <form class="form-horizontal" method="POST" action="" id="frmLogin">
         <div class="control-group">
-            <label class="control-label" for="inputEmail1" style="font-size: 20px">Email</label>
+            <label class="control-label" for="txtUsername" style="font-size: 20px">Email</label>
             <div class="controls">
-                <input class="span3" type="text" id="inputEmail1" placeholder="vinhhoang97@gmail.com" style="font-size: 20px; height: 30px;">
+                <input class="span3" type="text" id="txtUsername" placeholder="vinhhoang97@gmail.com" style="font-size: 20px; height: 30px;" name="username">
             </div>
         </div>
         <div class="control-group">
             <label class="control-label" for="inputPassword1" style="font-size: 20px;">Mật khẩu</label>
             <div class="controls">
-                <input type="password" class="span3" id="inputPassword1" placeholder="" style="font-size: 20px; height: 30px;">
-            </div>
+                <input type="password" class="span3" id="inputPassword1" placeholder="" style="font-size: 20px; height: 30px;" name="password">
+            </div >
         </div>
         <div class="control-group">
             <div class="controls">
@@ -25,11 +25,18 @@
                 <a href="forgetpass.html">Quên mật khẩu?</a>
             </div>
         </div>
+        
         <div class="control-group">
             <div class="span2">
                 <p style="font-weight: bold;font-size: 17px;">Chưa có tài khoản? </p>
             </div>
-            <a href="register.html" style="font-weight: bold;font-size: 17px;color: blue;">ĐĂNG KÝ NGAY!</a>
+            <a href="/register" style="font-weight: bold;font-size: 17px;color: blue;">ĐĂNG KÝ NGAY!</a>
         </div>
     </form>
+    {{#if showError}}
+        <div class="alert alert-danger">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            <strong>Title!</strong> {{errorMsg}}
+        </div>
+    {{/if}}
 </div>

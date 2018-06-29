@@ -9,8 +9,11 @@ module.exports = (req, res, next) => {
         res.locals.layoutVM = {
             categories: rows,
             suppliers: rows,
-            isLogged: req.session.isLogged
+            isLogged: req.session.isLogged,
+            curUser: req.session.user
+
         };
+         //console.log(res.locals.layoutVM.curUser);
         next();
     });
 };

@@ -2,8 +2,11 @@ var express = require('express');
 var express_hbs = require('express-handlebars');
 var express_hbs_sections = require('express-handlebars-sections');
 var body_parser = require('body-parser');
+<<<<<<< HEAD
 var passport = require('passport');
 var session = require('express-session');
+=======
+>>>>>>> b620e5cb5fc1b9ec28a196e9ac747a2855f9c396
 var path = require('path');
 var wnumb = require('wnumb');
 
@@ -13,22 +16,45 @@ var MySQLStore = require('express-mysql-session')(session);
 
 var handleLayoutMDW = require('./middle-wares/handleLayout'),
     handle404MDW = require('./middle-wares/handle404');
+    restrict = require('./middle-wares/restrict');
+
 
 var web_homeController = require('./Controller/web_homeController');
 var web_productsController = require('./Controller/web_productsController')
+<<<<<<< HEAD
 var web_prodetailController = require('./Controller/web_prodetailController')
 var web_register = require('./Controller/web_register');
 var web_login = require('./Controller/web_login');
 var path = require('path');
+=======
+var web_prodetailController=require('./Controller/web_prodetailController')
+var web_register=require('./Controller/web_register');
+var web_login=require('./Controller/web_login');
+var web_profileController=require('./Controller/web_profileController');
+>>>>>>> b620e5cb5fc1b9ec28a196e9ac747a2855f9c396
 
 var app = express();
 
 app.engine('hbs', express_hbs({
+<<<<<<< HEAD
     defaultLayout: 'web',
     layoutsDir: 'views/layout/',
     helpers: {
         section: express_hbs_sections()
     }
+=======
+	defaultLayout:'web',
+	layoutsDir:'views/layout/',
+	helpers:{
+		section: express_hbs_sections(),
+        number_format: n => {
+            var nf = wnumb({
+                thousand: ','
+            });
+            return nf.to(n);
+        }
+	}
+>>>>>>> b620e5cb5fc1b9ec28a196e9ac747a2855f9c396
 }))
 app.set('view engine', 'hbs');
 
@@ -75,8 +101,16 @@ app.use('/product_details', web_prodetailController)
 
 //register
 app.use('/register', web_register)
+<<<<<<< HEAD
 
 app.use('/login', web_login)
+=======
+//login
+app.use('/login',web_login)
+
+//profile
+app.use('/profile',web_profileController)
+>>>>>>> b620e5cb5fc1b9ec28a196e9ac747a2855f9c396
 
 app.get('/product_summary', (req, res) => {
     res.render('product/product_summary');
@@ -114,9 +148,14 @@ app.get('/special_offer', (req, res) => {
 app.get('/tac', (req, res) => {
     res.render('tac/tac');
 })
+<<<<<<< HEAD
 app.get('/user_info', (req, res) => {
     res.render('user_info/user_info');
 })
+=======
+
+
+>>>>>>> b620e5cb5fc1b9ec28a196e9ac747a2855f9c396
 
 
 app.use(handle404MDW);
