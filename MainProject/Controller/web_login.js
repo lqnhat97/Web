@@ -12,16 +12,17 @@ router.get('/',(req,res)=>{
 router.post('/', (req, res) => {
     var user = {
         username: req.body.username,
-        password: SHA256(req.body.password).toString()
+        password: req.body.password
     };
 
     userRepo.login(user).then(rows => {
-        if (rows.length >= 0) {
+        if (rows.length > 0) {
             // user = rows[0];
 
             req.session.isLogged = true;
             req.session.user = rows[0];
-
+            req.session.cart = [0];
+            //console.log(req.session.user);
 
             var url = '/';
             if (req.query.retUrl) {

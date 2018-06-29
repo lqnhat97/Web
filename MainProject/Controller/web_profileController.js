@@ -5,7 +5,7 @@ var userRepo = require('../repo/user');
 
 router.get('/',(req,res)=>{
 
-	userRepo.loadUser(req.session.curUser.id).then(rows=>{
+	userRepo.loadUsers(req.session.user.id).then(rows=>{
 		var vm={
 			info:rows
 		};

@@ -26,11 +26,11 @@ var web_register = require('./Controller/web_register');
 var web_login = require('./Controller/web_login');
 var path = require('path');
 
+var cartController=require('./Controller/cartController');
 var web_prodetailController=require('./Controller/web_prodetailController')
 var web_register=require('./Controller/web_register');
 var web_login=require('./Controller/web_login');
 var web_profileController=require('./Controller/web_profileController');
-
 
 var app = express();
 
@@ -72,6 +72,8 @@ var sessionStore = new MySQLStore({
     }
 });
 
+
+
 app.use(session({
     key: 'session_cookie_name',
     secret: 'session_cookie_secret',
@@ -104,14 +106,9 @@ app.use('/login',web_login)
 app.use('/profile',web_profileController)
 
 
-app.get('/product_summary', (req, res) => {
-    res.render('product/product_summary');
-})
+app.use('/product_summary',cartController);
 
 
-app.get('/compair', (req, res) => {
-    res.render('compair/compair');
-})
 
 app.get('/contact', (req, res) => {
     res.render('contact/contact');

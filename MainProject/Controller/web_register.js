@@ -9,16 +9,16 @@ router.get('/',(req,res)=>{
 	res.render('register/register');
 })
 
-router.post('/',(req,res)=>{
+router.post('/',(req,res)=>{ console.log(req.body)
 	var vm={
 		name: req.body.name,
 		mail:req.body.email,
-		phone:req.body.phone,
+		phone: req.body.phone,
 		address: req.body.city,
-		pass:SHA256(req.body.passwpord).toString(),
-		gender:req.body.gender,
-		addtion:req.body.addition,
-		birthday:req.body.birthday
+		pass: req.body.pass,
+		gender: req.body.gender,
+		addtion: req.body.addition,
+		birthday: req.body.birthday
 	}
 	user.register(vm).then(rows=>{
 		var ok = {

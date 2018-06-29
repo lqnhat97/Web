@@ -30,13 +30,15 @@
         <div class="container">
             {{#if layoutVM.isLogged}}
             <div id="welcomeLine" class="row">
-                <div class="span6">Chào mừng!<strong><p>{{layoutVM.curUser.username}}</p> </strong></div>
+                <div class="span6">Chào mừng!<strong><p>{{layoutVM.curUser.name}}</p> </strong></div>
                 <div class="span6">
                     <div class="pull-right">
                         <a href="#"><span class="">Tổng tiền:</span></a>
                         <a href="/product_summary" id="cost">0</a>
                         <a href="/product_summary"><span class="">VND</span></a>
-                        <a href="/product_summary"><span class="btn btn-mini btn-primary"><i class="icon-shopping-cart icon-white"></i> Bạn có 0 sản phẩm trong giỏ hàng </span> </a>
+                        <form id="frmLogout" method="post" action="/login/logout">
+                        <a id="lnkLogout" href="javascript:;"><span class="btn btn-mini btn-primary"><i></i> Đăng xuất </span> </a>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -79,8 +81,8 @@
                         <li class=""><a href="/contact">Liên lạc</a></li>
                         <li class="">
                             {{#if layoutVM.isLogged}}
-                            <form id="frmLogout" method="post" action="/login/logout"></form>
-                            <a id="lnkLogout" href="javascript:;" role="button" style="padding-right:0"><span class="btn btn-large btn-primary">Đăng xuất</span></a>
+                            <a href="/profile"  role="button" style="padding-right:0"><span class="btn btn-large btn-primary">Cá nhân</span></a>
+                            
                             {{else}}
                              <a href="/login" role="button" style="padding-right:0"><span class="btn btn-large btn-success">Đăng nhập</span></a>
                              {{/if}}
@@ -252,6 +254,11 @@
     $('#lnkLogout').on('click', function() {
         $('#frmLogout').submit();
     });
+    </script>
+    <script type="text/javascript">
+        $('#addbtn').click(function(){
+            
+        })
     </script>
 </body>
 

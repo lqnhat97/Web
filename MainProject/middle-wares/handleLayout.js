@@ -13,7 +13,8 @@ module.exports = (req, res, next) => {
             curUser: req.session.user
 
         };
-         //console.log(res.locals.layoutVM.curUser);
+
+         
         next();
     });
 };

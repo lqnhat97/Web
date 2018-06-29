@@ -6,39 +6,7 @@
     </ul>
     <h3>  Giỏ hàng của bạn [ <small>3 sản phẩm </small>]<a href="/products" class="btn btn-large pull-right"><i class="icon-arrow-left"></i> Tiếp tục mua sắm </a></h3>
     <hr class="soft" />
-    <table class="table table-bordered">
-        <tr>
-            <th> Tôi đã là thành viên !!! </th>
-        </tr>
-        <tr>
-            <td>
-                <form class="form-horizontal">
-                    <div class="control-group">
-                        <label class="control-label" for="inputUsername">Tài khoản</label>
-                        <div class="controls">
-                            <input type="text" id="inputUsername" placeholder="Username">
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label class="control-label" for="inputPassword1">Mật khẩu</label>
-                        <div class="controls">
-                            <input type="password" id="inputPassword1" placeholder="Password">
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <div class="controls">
-                            <button type="submit" class="btn">Đăng nhập</button> HOẶC <a href="register.html" class="btn">Đăng ký ngay!</a>
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <div class="controls">
-                            <a href="forgetpass.html" style="text-decoration:underline">Quên mật khẩu?</a>
-                        </div>
-                    </div>
-                </form>
-            </td>
-        </tr>
-    </table>
+    
     <table class="table table-bordered">
         <thead>
             <tr>
@@ -46,29 +14,18 @@
                 <th>Mô tả</th>
                 <th>Số lượng</th>
                 <th>Price</th>
-                <th>Giảm giá</th>
-                <th>Thuế</th>
-                <th>Tổng tiền</th>
             </tr>
         </thead>
         <tbody>
+        {{#each category}}
             <tr>
-                <td> <img width="60" src="themes/images/products/laptop_asus-s510uq-bq475t-15.6_i5-8250u_4gb_hdd-1tb-trang-4.jpg" alt="" /></td>
-                <td>Laptop Asus S510UQ-BQ475T (I5-8250U) (Vàng đồng)T
-                    <br/>Color : Yellow, Material : metal</td>
+                <td> <img width="60" src="/{{image_link}}" alt="" /></td>
+                <td>{{name}}</td>
                 <td>
-                    <div class="input-append">
-                        <input class="span1" style="max-width:34px" placeholder="1" id="appendedInputButtons" size="16" type="text">
-                        <button class="btn" type="button"><i class="icon-minus"></i></button>
-                        <button class="btn" type="button"><i class="icon-plus"></i></button>
-                        <button class="btn btn-danger" type="button"><i class="icon-remove icon-white"></i></button>
-                    </div>
                 </td>
-                <td>20,000,000₫</td>
-                <td>2,000,000₫</td>
-                <td>2,000,000₫</td>
-                <td>20,000,000₫</td>
+                <td>{{price}}</td>
             </tr>
+        {{/each}}
             <tr>
                 <td> <img width="60" src="themes/images/products/asus-vivobook-x540up-go106d-11.jpg" alt="" /></td>
                 <td>Laptop Asus X540UP-GO106D (I3-7100U) (Đen)
