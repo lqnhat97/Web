@@ -26,5 +26,13 @@ router.get('/price', (req, res) => {
     })
 })
 	
-
+router.get('/searchbyname', (req, res) => {
+    var name=req.query.name;
+    productRepos.searchProductName(name).then(rows => {
+        var vm = {
+            categories:rows,
+        };
+        res.render('product/products', vm);
+    })
+})
 module.exports = router;

@@ -76,15 +76,24 @@ exports.loadProductBasePrice=(catId,price1,price2)=>{
 	return db.load(sql);
 }
 
-/*//Hien thi san pham  theo khung gia duoi 10000000
-exports.loadProductBetween1015=(id)=>{
-	var sql = `select * from product where price > 10000000.0000 and price <=20000000 and catalog_id="${id}"`;
+
+//Tim san pham theo ten gan dung 
+exports.searchProductName=(name)=>{
+	var sql=`select * from product where name like '%${name}%'`;
 	return db.load(sql);
 }
 
-//Hien thi san pham  theo khung gia tren 20000000
-exports.loadProductOver20=(id)=>{
-	var sql = `select * from product where price > 20000000.0000 and catalog_id="${id}"`;
+//5 san pham cung nha san xuat
+exports.loadSameBrandProduct=(id)=>{
+	var sql=`select p2.* from product p1,product p2 where p1.id="${id}" and p2.catalog_id=p1.catalog_id limit 5`;
 	return db.load(sql);
-}*/
+}
+
+//5 san pham cung loai
+exports.loadSameCategoryProduct=(price)=>{
+	var sql=`select p2.* from product p1,product p2 where p1.id=16 and p2.catalog_id=p1.catalog_id limit 5`;
+	return db.load(sql);
+}
+
+
 

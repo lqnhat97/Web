@@ -10,19 +10,19 @@
     <div class="row">
         <div id="gallery" class="span3">
             <a href="#" title="{{name}}">
-				<img src="{{image_link}}" style="width:100%" alt="{{name}}"/>
+				<img src="/{{image_link}}" style="width:100%" alt="{{name}}"/>
             </a>
             <div id="differentview" class="moreOptopm carousel slide">
                 <div class="carousel-inner">
                     <div class="item active">
-                        <a href="{{image_link}}"> <img style="width:29%" src="{{image_link}}" alt=""/></a>
-                        <a href="{{image_link}}"> <img style="width:29%" src="{{image_link}}" alt=""/></a>
-                        <a href="{{image_link}}"> <img style="width:29%" src="{{image_link}}" alt=""/></a>
+                        <a href="/{{image_link}}"> <img style="width:29%" src="/{{image_link}}" alt=""/></a>
+                        <a href="/{{image_link}}"> <img style="width:29%" src="/{{image_link}}" alt=""/></a>
+                        <a href="/{{image_link}}"> <img style="width:29%" src="/{{image_link}}" alt=""/></a>
                     </div>
                     <div class="item">
-                        <a href="{{image_link}}"> <img style="width:29%" src="{{image_link}}" alt=""/></a>
-                        <a href="{{image_link}}"> <img style="width:29%" src="{{image_link}}" alt=""/></a>
-                        <a href="{{image_link}}"> <img style="width:29%" src="{{image_link}}" alt=""/></a>
+                        <a href="/{{image_link}}"> <img style="width:29%" src="/{{image_link}}" alt=""/></a>
+                        <a href="/{{image_link}}"> <img style="width:29%" src="/{{image_link}}" alt=""/></a>
+                        <a href="/{{image_link}}"> <img style="width:29%" src="/{{image_link}}" alt=""/></a>
                     </div>
                 </div>
                  
@@ -278,293 +278,38 @@
                     <hr class="soft" />
                     <div class="tab-content">
                         <div class="tab-pane" id="listView">
+                        {{#each brand}} 
                             <div class="row">
                                 <div class="span2">
-                                    <img src="images/products/asus-vivobook-x540up-go106d-11.jpg" alt="" />
+                                    <img src="{{image_link}}" alt="" />
                                 </div>
                                 <div class="span4">
                                     <h3>Sản phẩm cùng nhà sản xuất</h3>
                                     <hr class="soft" />
-                                    <h5>Laptop Asus X540UP-GO106D (I3-7100U) (Đen) </h5>
+                                    <h5>{{name}} </h5>
                                     <p>
-                                        - CPU Intel Core i3-7100U (2.4GHz, 3MB Cache)
-                                        <br> - RAM 4GB DDR4 - 2133MHz
-                                        <br> - HDD 1TB 5400rpm
-                                        <br> - VGA AMD Radeon R5 M420 2GB DDR3 + Intel HD Graphics 620
-                                        <br> - Màn hính: 15.6" HD (1366 x 768)
-                                        <br> - Trọng lượng: ~ 2kg
-                                        <br> - Hệ điều hành: Free DOS
-                                        <br>
+                                        {{content}}
                                     </p>
-                                    <a class="btn btn-small pull-right" href="/product_details">Xem chi tiết</a>
+                                    <a class="btn btn-small pull-right" href="/product_details?id={{id}}">Xem chi tiết</a>
                                     <br class="clr" />
                                 </div>
                                 <div class="span3 alignR">
                                     <form class="form-horizontal qtyFrm">
-                                        <h3> 10.150.000 ₫</h3>
+                                        <h3> {{price}}</h3>
                                         <label class="checkbox">
                                             <input type="checkbox"> So sánh
                                         </label>
                                         <br/>
                                         <div class="btn-group">
-                                            <a href="/product_details" class="btn btn-large btn-primary"> Thêm vào giỏ hàng <i class=" icon-shopping-cart"></i></a>
-                                            <a href="/product_details" class="btn btn-large"><i class="icon-zoom-in"></i></a>
+                                            <a href="/product_details?id={{id}}" class="btn btn-large btn-primary"> Thêm vào giỏ hàng <i class=" icon-shopping-cart"></i></a>
+                                            <a href="/product_details?id={{id}}" class="btn btn-large"><i class="icon-zoom-in"></i></a>
                                         </div>
                                     </form>
                                 </div>
                             </div>
+
                             <hr class="soft" />
-                            <div class="row">
-                                <div class="span2">
-                                    <img src="images/products/lenovo-g5070-5942-3771-black_1.jpg" alt="" />
-                                </div>
-                                <div class="span4">
-                                    <h3>Sản phẩm cùng loại</h3>
-                                    <hr class="soft" />
-                                    <h5>Laptop Lenovo G5070-6676 (Đen) </h5>
-                                    <p>
-                                        - CPU: i3-4005U
-                                        <br> - Ram: 2GB
-                                        <br> - Ổ cứng: HDD 500GB
-                                        <br> - Màn hình: 15.6" HD
-                                        <br> - Trọng lượng: 2.3kg
-                                        <br> - Hệ điều hành có sẵn: Free Dos
-                                        <br>
-                                    </p>
-                                    <a class="btn btn-small pull-right" href="/product_details">Xem chi tiết</a>
-                                    <br class="clr" />
-                                </div>
-                                <div class="span3 alignR">
-                                    <form class="form-horizontal qtyFrm">
-                                        <h3> 7.890.000 ₫</h3>
-                                        <label class="checkbox">
-                                            <input type="checkbox"> So sánh
-                                        </label>
-                                        <br/>
-                                        <div class="btn-group">
-                                            <a href="/product_details" class="btn btn-large btn-primary">Thêm vào giỏ hàng  <i class=" icon-shopping-cart"></i></a>
-                                            <a href="/product_details" class="btn btn-large"><i class="icon-zoom-in"></i></a>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <hr class="soft" />
-                            <div class="row">
-                                <div class="span2">
-                                    <img src="images/products/Asus-fx503vd-7.jpg" alt="" />
-                                </div>
-                                <div class="span4">
-                                    <h3>Sản phẩm cùng nhà sản xuất</h3>
-                                    <hr class="soft" />
-                                    <h5> Laptop Asus FX503VD-E4119T (I7-7700HQ) (Đen) </h5>
-                                    <p>
-                                        - CPU Intel Core i7 7700HQ (2.8GHz Up to 3.8GHz, 6MB Cache)
-                                        <br> - RAM 8GB DDR4 - 2400MHz
-                                        <br> - SSHD 1TB 5400rpm + 8GB NAND
-                                        <br> - VGA NVIDIA GeForce GTX 1050 4GB GDDR5 + Intel HD Graphics 630
-                                        <br> - Màn hình: 15.6" FHD (1920 x 1080)
-                                        <br> - Trọng lượng: ~ 2.3kg
-                                        <br> - Hệ điều hành: Windows 10 Home - 64 bit
-                                        <br>
-                                    </p>
-                                    <a class="btn btn-small pull-right" href="/product_details">Xem chi tiết</a>
-                                    <br class="clr" />
-                                </div>
-                                <div class="span3 alignR">
-                                    <form class="form-horizontal qtyFrm">
-                                        <h3> 24.490.000 ₫</h3>
-                                        <label class="checkbox">
-                                            <input type="checkbox"> So sánhr
-                                        </label>
-                                        <br/>
-                                        <div class="btn-group">
-                                            <a href="/product_details" class="btn btn-large btn-primary">Thêm vào giỏ hàn<i class=" icon-shopping-cart"></i></a>
-                                            <a href="/product_details" class="btn btn-large"><i class="icon-zoom-in"></i></a>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="span2">
-                                    <img src="images/products/laptop_asus-s510uq-bq475t-15.6_i5-8250u_4gb_hdd-1tb-trang-4.jpg" alt="" />
-                                </div>
-                                <div class="span4">
-                                    <h3>Sản phẩm cùng nhà sản xuất</h3>
-                                    <hr class="soft" />
-                                    <h5> Laptop Asus S510UQ-BQ475T (I5-8250U) (Vàng đồng) </h5>
-                                    <p>
-                                        - CPU: Intel Core i5-8250U (1.6GHz Up to 3.4GHz, 6MB Cache)
-                                        <br> - RAM: 1x4GB, DDR4, 2400MHz, 2 Slots
-                                        <br> - Ổ cứng: HDD 1TB 5400rpm, Khe mở rộng: M.2 2280 Sata
-                                        <br> - VGA: NVIDIA GeForce GT940MX 2GB GDDR5 + Intel UHD Graphics 620
-                                        <br> - Màn hình: : 15.6 INCH, 1920x1080, Webcam HD, Led_KB
-                                        <br> - Kết nối: 2x USB 2.0, USB 3.0, USB-C, HDMI, BT 4.2
-                                        <br> - Khối lượng: 1.6 kg
-                                        <br> - Hệ điều hành: Windows 10 Home SL 64bits
-                                        <br>
-                                    </p>
-                                    <a class="btn btn-small pull-right" href="/product_details">Xem chi tiết</a>
-                                    <br class="clr" />
-                                </div>
-                                <div class="span3 alignR">
-                                    <form class="form-horizontal qtyFrm">
-                                        <h3> 17.290.000 ₫</h3>
-                                        <label class="checkbox">
-                                            <input type="checkbox"> So sánhr
-                                        </label>
-                                        <br/>
-                                        <div class="btn-group">
-                                            <a href="/product_details" class="btn btn-large btn-primary">Thêm vào giỏ hàng<i class=" icon-shopping-cart"></i></a>
-                                            <a href="/product_details" class="btn btn-large"><i class="icon-zoom-in"></i></a>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="span2">
-                                    <img src="images/products/laptop_asus-s510uq-bq475t-15.6_i5-8250u_4gb_hdd-1tb-trang-4.jpg" alt="" />
-                                </div>
-                                <div class="span4">
-                                    <h3>Sản phẩm cùng nhà sản xuất</h3>
-                                    <hr class="soft" />
-                                    <h5> Laptop Asus S510UQ-BQ475T (I5-8250U) (Vàng đồng) </h5>
-                                    <p>
-                                        - CPU: Intel Core i5-8250U (1.6GHz Up to 3.4GHz, 6MB Cache)
-                                        <br> - RAM: 1x4GB, DDR4, 2400MHz, 2 Slots
-                                        <br> - Ổ cứng: HDD 1TB 5400rpm, Khe mở rộng: M.2 2280 Sata
-                                        <br> - VGA: NVIDIA GeForce GT940MX 2GB GDDR5 + Intel UHD Graphics 620
-                                        <br> - Màn hình: : 15.6 INCH, 1920x1080, Webcam HD, Led_KB
-                                        <br> - Kết nối: 2x USB 2.0, USB 3.0, USB-C, HDMI, BT 4.2
-                                        <br> - Khối lượng: 1.6 kg
-                                        <br> - Hệ điều hành: Windows 10 Home SL 64bits
-                                        <br>
-                                    </p>
-                                    <a class="btn btn-small pull-right" href="/product_details">Xem chi tiết</a>
-                                    <br class="clr" />
-                                </div>
-                                <div class="span3 alignR">
-                                    <form class="form-horizontal qtyFrm">
-                                        <h3> 17.290.000 ₫</h3>
-                                        <label class="checkbox">
-                                            <input type="checkbox"> So sánhr
-                                        </label>
-                                        <br/>
-                                        <div class="btn-group">
-                                            <a href="/product_details" class="btn btn-large btn-primary">Thêm vào giỏ hàng<i class=" icon-shopping-cart"></i></a>
-                                            <a href="/product_details" class="btn btn-large"><i class="icon-zoom-in"></i></a>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="span2">
-                                    <img src="images/products/laptop_asus-s510uq-bq475t-15.6_i5-8250u_4gb_hdd-1tb-trang-4.jpg" alt="" />
-                                </div>
-                                <div class="span4">
-                                    <h3>Sản phẩm cùng nhà sản xuất</h3>
-                                    <hr class="soft" />
-                                    <h5> Laptop Asus S510UQ-BQ475T (I5-8250U) (Vàng đồng) </h5>
-                                    <p>
-                                        - CPU: Intel Core i5-8250U (1.6GHz Up to 3.4GHz, 6MB Cache)
-                                        <br> - RAM: 1x4GB, DDR4, 2400MHz, 2 Slots
-                                        <br> - Ổ cứng: HDD 1TB 5400rpm, Khe mở rộng: M.2 2280 Sata
-                                        <br> - VGA: NVIDIA GeForce GT940MX 2GB GDDR5 + Intel UHD Graphics 620
-                                        <br> - Màn hình: : 15.6 INCH, 1920x1080, Webcam HD, Led_KB
-                                        <br> - Kết nối: 2x USB 2.0, USB 3.0, USB-C, HDMI, BT 4.2
-                                        <br> - Khối lượng: 1.6 kg
-                                        <br> - Hệ điều hành: Windows 10 Home SL 64bits
-                                        <br>
-                                    </p>
-                                    <a class="btn btn-small pull-right" href="/product_details">Xem chi tiết</a>
-                                    <br class="clr" />
-                                </div>
-                                <div class="span3 alignR">
-                                    <form class="form-horizontal qtyFrm">
-                                        <h3> 17.290.000 ₫</h3>
-                                        <label class="checkbox">
-                                            <input type="checkbox"> So sánhr
-                                        </label>
-                                        <br/>
-                                        <div class="btn-group">
-                                            <a href="/product_details" class="btn btn-large btn-primary">Thêm vào giỏ hàng<i class=" icon-shopping-cart"></i></a>
-                                            <a href="/product_details" class="btn btn-large"><i class="icon-zoom-in"></i></a>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="span2">
-                                    <img src="images/products/laptop_asus-s510uq-bq475t-15.6_i5-8250u_4gb_hdd-1tb-trang-4.jpg" alt="" />
-                                </div>
-                                <div class="span4">
-                                    <h3>Sản phẩm cùng nhà sản xuất</h3>
-                                    <hr class="soft" />
-                                    <h5> Laptop Asus S510UQ-BQ475T (I5-8250U) (Vàng đồng) </h5>
-                                    <p>
-                                        - CPU: Intel Core i5-8250U (1.6GHz Up to 3.4GHz, 6MB Cache)
-                                        <br> - RAM: 1x4GB, DDR4, 2400MHz, 2 Slots
-                                        <br> - Ổ cứng: HDD 1TB 5400rpm, Khe mở rộng: M.2 2280 Sata
-                                        <br> - VGA: NVIDIA GeForce GT940MX 2GB GDDR5 + Intel UHD Graphics 620
-                                        <br> - Màn hình: : 15.6 INCH, 1920x1080, Webcam HD, Led_KB
-                                        <br> - Kết nối: 2x USB 2.0, USB 3.0, USB-C, HDMI, BT 4.2
-                                        <br> - Khối lượng: 1.6 kg
-                                        <br> - Hệ điều hành: Windows 10 Home SL 64bits
-                                        <br>
-                                    </p>
-                                    <a class="btn btn-small pull-right" href="/product_details">Xem chi tiết</a>
-                                    <br class="clr" />
-                                </div>
-                                <div class="span3 alignR">
-                                    <form class="form-horizontal qtyFrm">
-                                        <h3> 17.290.000 ₫</h3>
-                                        <label class="checkbox">
-                                            <input type="checkbox"> So sánhr
-                                        </label>
-                                        <br/>
-                                        <div class="btn-group">
-                                            <a href="/product_details" class="btn btn-large btn-primary">Thêm vào giỏ hàng<i class=" icon-shopping-cart"></i></a>
-                                            <a href="/product_details" class="btn btn-large"><i class="icon-zoom-in"></i></a>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="span2">
-                                    <img src="images/products/laptop_asus-s510uq-bq475t-15.6_i5-8250u_4gb_hdd-1tb-trang-4.jpg" alt="" />
-                                </div>
-                                <div class="span4">
-                                    <h3>Sản phẩm cùng nhà sản xuất</h3>
-                                    <hr class="soft" />
-                                    <h5> Laptop Asus S510UQ-BQ475T (I5-8250U) (Vàng đồng) </h5>
-                                    <p>
-                                        - CPU: Intel Core i5-8250U (1.6GHz Up to 3.4GHz, 6MB Cache)
-                                        <br> - RAM: 1x4GB, DDR4, 2400MHz, 2 Slots
-                                        <br> - Ổ cứng: HDD 1TB 5400rpm, Khe mở rộng: M.2 2280 Sata
-                                        <br> - VGA: NVIDIA GeForce GT940MX 2GB GDDR5 + Intel UHD Graphics 620
-                                        <br> - Màn hình: : 15.6 INCH, 1920x1080, Webcam HD, Led_KB
-                                        <br> - Kết nối: 2x USB 2.0, USB 3.0, USB-C, HDMI, BT 4.2
-                                        <br> - Khối lượng: 1.6 kg
-                                        <br> - Hệ điều hành: Windows 10 Home SL 64bits
-                                        <br>
-                                    </p>
-                                    <a class="btn btn-small pull-right" href="/product_details">Xem chi tiết</a>
-                                    <br class="clr" />
-                                </div>
-                                <div class="span3 alignR">
-                                    <form class="form-horizontal qtyFrm">
-                                        <h3> 17.290.000 ₫</h3>
-                                        <label class="checkbox">
-                                            <input type="checkbox"> So sánhr
-                                        </label>
-                                        <br/>
-                                        <div class="btn-group">
-                                            <a href="/product_details" class="btn btn-large btn-primary">Thêm vào giỏ hàng<i class=" icon-shopping-cart"></i></a>
-                                            <a href="/product_details" class="btn btn-large"><i class="icon-zoom-in"></i></a>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <hr class="soft" />
+                            {{/each}}
                         </div>
                         <div class="tab-pane active" id="blockView">
                             <ul class="thumbnails">

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
 
 <head>
@@ -42,24 +42,25 @@
             <!-- Navbar ================================================== -->
             <div id="logoArea" class="navbar">
                 <a id="smallScreen" data-target="#topMenu" data-toggle="collapse" class="btn btn-navbar">
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
 </a>
                 <div class="navbar-inner">
                     <a class="brand" href="/"><img src="/images/logo.png" alt="NaViLap"/></a>
-                    <form class="form-inline navbar-search" method="post" action="/products">
-                        <input id="srchFld" class="srchTxt" type="text" />
-                        <select class="srchTxt">
-                            <option>Tất cả</option>
-                            <option>ASUS </option>
-                            <option>DELL </option>
-                            <option>ACER </option>
-                            <option>HP </option>
-                            <option>LENOVO</option>
-                        </select>
-                        <button type="submit" id="submitButton" class="btn btn-primary">Tìm</button>
-                    </form>
+                    <div id="searchForm" class="form-inline navbar-search" method="post" action="/products">
+                        <input id="srchFld" class="srchTxt" type="text" name="name"   />
+                        <a id="searchLink" href="#">
+                            <button type="button" id="submitButton" class="btn btn-primary">Tìm</button>
+                        </a>
+                        <script language="javascript">
+                        var input = document.getElementById("srchFld");
+                        document.getElementById("submitButton").onclick = function() {
+                        document.getElementById("searchLink").href = "/products/searchbyname?name=" + input.value;}
+                        
+                        
+                        </script>
+                    </div>
                     <ul id="topMenu" class="nav pull-right">
                         <li class=""><a href="/special_offer">Khuyến mãi</a></li>
                         <li class=""><a href="/normal">Giao hàng</a></li>
@@ -151,13 +152,12 @@
                                 <li><a href="/products/price?catId=3&price1=10000000&price2=0"><i class="icon-chevron-right"></i>Dưới 10 triệu</a></li>
                                 <li><a href="/products/price?catId=3&price1=20000000&price2=10000000"><i class="icon-chevron-right"></i>Từ 10 - 20 triệu </a></li>
                                 <li><a href="/products/price?catId=3&price1=999999999&price2=20000000"><i class="icon-chevron-right"></i>Trên 20 triệu</a></li>
-
                             </ul>
                         </li>
                         <li class="subMenu"><a>HP</a>
                             <ul style="display:none">
                                 <li><a href="/products?catId=4"><i class="icon-chevron-right"></i>Tất cả</a></li>
-                                 <li><a href="/products/price?catId=4&price1=10000000&price2=0"><i class="icon-chevron-right"></i>Dưới 10 triệu</a></li>
+                                <li><a href="/products/price?catId=4&price1=10000000&price2=0"><i class="icon-chevron-right"></i>Dưới 10 triệu</a></li>
                                 <li><a href="/products/price?catId=4&price1=20000000&price2=10000000"><i class="icon-chevron-right"></i>Từ 10 - 20 triệu </a></li>
                                 <li><a href="/products/price?catId=4&price1=999999999&price2=20000000"><i class="icon-chevron-right"></i>Trên 20 triệu</a></li>
                             </ul>
@@ -165,7 +165,7 @@
                         <li class="subMenu"><a>LENOVO</a>
                             <ul style="display:none">
                                 <li><a href="/products?catId=5"><i class="icon-chevron-right"></i>Tất cả</a></li>
-                                  <li><a href="/products/price?catId=5&price1=10000000&price2=0"><i class="icon-chevron-right"></i>Dưới 10 triệu</a></li>
+                                <li><a href="/products/price?catId=5&price1=10000000&price2=0"><i class="icon-chevron-right"></i>Dưới 10 triệu</a></li>
                                 <li><a href="/products/price?catId=5&price1=20000000&price2=10000000"><i class="icon-chevron-right"></i>Từ 10 - 20 triệu </a></li>
                                 <li><a href="/products/price?catId=5&price1=999999999&price2=20000000"><i class="icon-chevron-right"></i>Trên 20 triệu</a></li>
                             </ul>
@@ -173,7 +173,7 @@
                         <li class="subMenu"><a>OTHER</a>
                             <ul style="display:none">
                                 <li><a href="/products?catId=6"><i class="icon-chevron-right"></i>Tất cả</a></li>
-                                  <li><a href="/products/price?catId=6&price1=10000000&price2=0"><i class="icon-chevron-right"></i>Dưới 10 triệu</a></li>
+                                <li><a href="/products/price?catId=6&price1=10000000&price2=0"><i class="icon-chevron-right"></i>Dưới 10 triệu</a></li>
                                 <li><a href="/products/price?catId=6&price1=20000000&price2=10000000"><i class="icon-chevron-right"></i>Từ 10 - 20 triệu </a></li>
                                 <li><a href="/products/price?catId=6&price1=999999999&price2=20000000"><i class="icon-chevron-right"></i>Trên 20 triệu</a></li>
                             </ul>
@@ -204,9 +204,7 @@
                     </div>
                 </div>
                 <!-- Sidebar end=============================================== -->
-                {{{_sections.title}}}
-
-                {{{body}}}
+                {{{_sections.title}}} {{{body}}}
             </div>
         </div>
     </div>

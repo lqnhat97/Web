@@ -6,6 +6,7 @@ var body_parser = require('body-parser');
 var path=require('path');
 var homeController=require('./Controller/homeController');
 var warehouseController=require('./Controller/warehouseController');
+var brandController=require('./Controller/brandController');
 
 var app=express();
 
@@ -26,7 +27,7 @@ app.use(body_parser.urlencoded({
 }));
 app.use('/',homeController);
 app.use('/warehouse',warehouseController);
-
+app.use('/brand',brandController);
 
 app.listen(3000, () => {
     console.log('Site running on port 3000');
