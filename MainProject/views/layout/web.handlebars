@@ -30,13 +30,13 @@
         <div class="container">
             {{#if layoutVM.isLogged}}
             <div id="welcomeLine" class="row">
-                <div class="span6">Chào mừng!<strong> {{layoutVM.curUser.name}}</strong></div>
+                <div class="span6">Chào mừng!<strong><p>{{layoutVM.curUser.username}}</p> </strong></div>
                 <div class="span6">
                     <div class="pull-right">
-                        <a href="/product_summary"><span class="">Tổng tiền:</span></a>
-                        <a href="/product_summary" id="cost">50,000,000</a>
+                        <a href="#"><span class="">Tổng tiền:</span></a>
+                        <a href="/product_summary" id="cost">0</a>
                         <a href="/product_summary"><span class="">VND</span></a>
-                        <a href="/product_summary"><span class="btn btn-mini btn-primary"><i class="icon-shopping-cart icon-white"></i> Bạn có 3 sản phẩm trong giỏ hàng </span> </a>
+                        <a href="/product_summary"><span class="btn btn-mini btn-primary"><i class="icon-shopping-cart icon-white"></i> Bạn có 0 sản phẩm trong giỏ hàng </span> </a>
                     </div>
                 </div>
             </div>
@@ -77,29 +77,12 @@
                         <li class=""><a href="/normal">Giao hàng</a></li>
                         <li class=""><a href="/contact">Liên lạc</a></li>
                         <li class="">
-                            <a href="#login" role="button" data-toggle="modal" style="padding-right:0"><span class="btn btn-large btn-success">Đăng nhập</span></a>
-                            <div id="login" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="false">
-                                <div class="modal-header">
-                                    <button href="/login" type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                    <h3>Đăng nhập</h3>
-                                </div>
-                                <div class="modal-body">
-                                    <form class="form-horizontal loginFrm" action="/login" method="POST">
-                                        <div class="control-group">
-                                            <input type="text" id="inputEmail" placeholder="Tài khoản" name="username">
-                                        </div>
-                                        <div class="control-group">
-                                            <input type="password" id="inputPassword" placeholder="Mật khẩu" name="password">
-                                        </div>
-                                        <div class="control-group">
-                                            <label class="checkbox">
-                                                <input type="checkbox">Ghi nhớ mật khẩu.
-                                            </label>
-                                        </div>
-                                        <button type="submit" class="btn btn-success">Đăng nhập</button>
-                                    </form>
-                                    <button class="btn" data-dismiss="modal" aria-hidden="true">Đóng</button>
-                                </div>
+                            {{#if layoutVM.isLogged}}
+                            <form id="frmLogout" method="post" action="/login/logout"></form>
+                            <a id="lnkLogout" href="javascript:;" role="button" style="padding-right:0"><span class="btn btn-large btn-primary">Đăng xuất</span></a>
+                            {{else}}
+                             <a href="/login" role="button" style="padding-right:0"><span class="btn btn-large btn-success">Đăng nhập</span></a>
+                             {{/if}}
                             </div>
                         </li>
                     </ul>
@@ -264,6 +247,11 @@
     <script src="/js/google-code-prettify/prettify.js"></script>
     <script src="/js/bootshop.js"></script>
     <script src="/js/jquery.lightbox-0.5.js"></script>
+    <script type="text/javascript">
+    $('#lnkLogout').on('click', function() {
+        $('#frmLogout').submit();
+    });
+    </script>
 </body>
 
 </html>

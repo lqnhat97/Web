@@ -2,7 +2,6 @@ var express = require('express');
 var express_hbs=require('express-handlebars');
 var express_hbs_sections=require('express-handlebars-sections');
 var body_parser = require('body-parser');
-var session=require('express-session');
 var path = require('path');
 var wnumb = require('wnumb');
 
@@ -20,7 +19,7 @@ var web_productsController = require('./Controller/web_productsController')
 var web_prodetailController=require('./Controller/web_prodetailController')
 var web_register=require('./Controller/web_register');
 var web_login=require('./Controller/web_login');
-var path=require('path');
+var web_profileController=require('./Controller/web_profileController');
 
 var app=express();
 
@@ -82,9 +81,11 @@ app.use('/product_details',web_prodetailController)
 
 //register
 app.use('/register', web_register)
-
+//login
 app.use('/login',web_login)
 
+//profile
+app.use('/profile',web_profileController)
 
 app.get('/product_summary',(req,res)=>{
 	res.render('product/product_summary');
@@ -122,9 +123,8 @@ app.get('/special_offer',(req,res)=>{
 app.get('/tac',(req,res)=>{
 	res.render('tac/tac');
 })
-app.get('/user_info',(req,res)=>{
-    res.render('user_info/user_info');
-})
+
+
 
 app.use(handle404MDW);
 
